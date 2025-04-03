@@ -1,4 +1,12 @@
 
+.vs/AlexiEconomy/FileContentIndex/066edfac-5968-4bce-9dc4-e7d25633a8cb.vsidx
+.vs/AlexiEconomy/FileContentIndex/795316e6-e8fa-4a9e-a7f7-c4c1b806d837.vsidx
+.vs/AlexiEconomy/FileContentIndex/90e64e1e-bf33-4b52-80f4-633058d2e91a.vsidx
+/.vs/AlexiEconomy/FileContentIndex
+/.vs/AlexiEconomy/v17
+/.vscode
+/bin/Debug
+/obj/Debug
 obj/Debug/AlexiEconomy.csproj.FileListAbsolute.txt
 obj/Debug/AlexiEconomy.csproj.CoreCompileInputs.cache
 obj/Debug/AlexiEconomy.csproj.AssemblyReference.cache
@@ -31,3 +39,4 @@ obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache
 .vs/AlexiEconomy/FileContentIndex/1b852621-8719-4455-ac06-38e82cdb96b6.vsidx
 .vs/AlexiEconomy/FileContentIndex/592c2345-aa76-4a2a-a641-ed2e055f0ca9.vsidx
 .vs/AlexiEconomy/FileContentIndex/b3c6f3d8-c097-4a22-831d-56ac3b7cb1a9.vsidx
+
