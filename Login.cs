@@ -39,5 +39,15 @@ namespace AlexiEconomy
                 txtUsuario.SelectionStart = txtUsuario.Text.Length;
             }
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if(txtUsuario.Text=="alexi"&& txtContraseña.Text=="panfleto" )
+            {
+                Menu open=new Menu();
+                open.Show();
+                this.Hide();   
+            }
+        }
     }
 }
