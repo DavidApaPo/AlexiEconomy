@@ -42,7 +42,7 @@ namespace AlexiEconomy
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if(txtUsuario.Text=="Daniel"&& txtContraseña.Text=="panfleto" )
+            if(txtUsuario.Text=="alexi"&& txtContraseña.Text=="panfleto" )
             {
                 Menu open=new Menu();
                 open.Show();
