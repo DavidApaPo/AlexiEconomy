@@ -42,12 +42,16 @@ namespace AlexiEconomy
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if(txtUsuario.Text=="alexi"&& txtContraseña.Text=="panfleto" )
+            if (txtUsuario.Text == "alexi" && txtContraseña.Text == "panfleto")
             {
-                Menu open=new Menu();
+                Menu open = new Menu();
                 open.Show();
-                this.Hide();   
+                this.Hide();
             }
+            else {
+                MessageBox.Show("Usuario o contraseña incorrecta");
+            }
+
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
