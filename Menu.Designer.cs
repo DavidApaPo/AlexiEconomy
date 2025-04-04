@@ -29,103 +29,117 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.txtProducts = new System.Windows.Forms.Button();
-            this.txtaSales = new System.Windows.Forms.Button();
-            this.txtInventory = new System.Windows.Forms.Button();
-            this.txtSuppliers = new System.Windows.Forms.Button();
-            this.txtCustomers = new System.Windows.Forms.Button();
-            this.txtWare = new System.Windows.Forms.Button();
-            this.txtEmployes = new System.Windows.Forms.Button();
+            this.btnaSales = new System.Windows.Forms.Button();
+            this.btnInventory = new System.Windows.Forms.Button();
+            this.btnSuppliers = new System.Windows.Forms.Button();
+            this.btnCustomers = new System.Windows.Forms.Button();
+            this.btnWare = new System.Windows.Forms.Button();
+            this.btnEmployes = new System.Windows.Forms.Button();
+            this.btnProducts = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(65, 44);
+            this.label1.Location = new System.Drawing.Point(80, 26);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(40, 16);
             this.label1.TabIndex = 0;
             this.label1.Text = "Menu";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
-            // txtProducts
+            // btnaSales
             // 
-            this.txtProducts.Location = new System.Drawing.Point(165, 65);
-            this.txtProducts.Name = "txtProducts";
-            this.txtProducts.Size = new System.Drawing.Size(75, 23);
-            this.txtProducts.TabIndex = 1;
-            this.txtProducts.Text = "Productos";
-            this.txtProducts.UseVisualStyleBackColor = true;
+            this.btnaSales.Location = new System.Drawing.Point(467, 76);
+            this.btnaSales.Name = "btnaSales";
+            this.btnaSales.Size = new System.Drawing.Size(75, 23);
+            this.btnaSales.TabIndex = 2;
+            this.btnaSales.Text = "Ventas";
+            this.btnaSales.UseVisualStyleBackColor = true;
             // 
-            // txtaSales
+            // btnInventory
             // 
-            this.txtaSales.Location = new System.Drawing.Point(279, 65);
-            this.txtaSales.Name = "txtaSales";
-            this.txtaSales.Size = new System.Drawing.Size(75, 23);
-            this.txtaSales.TabIndex = 2;
-            this.txtaSales.Text = "Ventas";
-            this.txtaSales.UseVisualStyleBackColor = true;
+            this.btnInventory.Location = new System.Drawing.Point(613, 65);
+            this.btnInventory.Name = "btnInventory";
+            this.btnInventory.Size = new System.Drawing.Size(75, 23);
+            this.btnInventory.TabIndex = 3;
+            this.btnInventory.Text = "Inventario";
+            this.btnInventory.UseVisualStyleBackColor = true;
             // 
-            // txtInventory
+            // btnSuppliers
             // 
-            this.txtInventory.Location = new System.Drawing.Point(381, 64);
-            this.txtInventory.Name = "txtInventory";
-            this.txtInventory.Size = new System.Drawing.Size(75, 23);
-            this.txtInventory.TabIndex = 3;
-            this.txtInventory.Text = "Inventario";
-            this.txtInventory.UseVisualStyleBackColor = true;
+            this.btnSuppliers.Location = new System.Drawing.Point(819, 65);
+            this.btnSuppliers.Name = "btnSuppliers";
+            this.btnSuppliers.Size = new System.Drawing.Size(75, 23);
+            this.btnSuppliers.TabIndex = 4;
+            this.btnSuppliers.Text = "Proveedores";
+            this.btnSuppliers.UseVisualStyleBackColor = true;
             // 
-            // txtSuppliers
+            // btnCustomers
             // 
-            this.txtSuppliers.Location = new System.Drawing.Point(478, 64);
-            this.txtSuppliers.Name = "txtSuppliers";
-            this.txtSuppliers.Size = new System.Drawing.Size(75, 23);
-            this.txtSuppliers.TabIndex = 4;
-            this.txtSuppliers.Text = "Proveedores";
-            this.txtSuppliers.UseVisualStyleBackColor = true;
+            this.btnCustomers.Location = new System.Drawing.Point(996, 64);
+            this.btnCustomers.Name = "btnCustomers";
+            this.btnCustomers.Size = new System.Drawing.Size(75, 23);
+            this.btnCustomers.TabIndex = 5;
+            this.btnCustomers.Text = "Clientes";
+            this.btnCustomers.UseVisualStyleBackColor = true;
             // 
-            // txtCustomers
+            // btnWare
             // 
-            this.txtCustomers.Location = new System.Drawing.Point(595, 64);
-            this.txtCustomers.Name = "txtCustomers";
-            this.txtCustomers.Size = new System.Drawing.Size(75, 23);
-            this.txtCustomers.TabIndex = 5;
-            this.txtCustomers.Text = "Clientes";
-            this.txtCustomers.UseVisualStyleBackColor = true;
+            this.btnWare.Location = new System.Drawing.Point(416, 176);
+            this.btnWare.Name = "btnWare";
+            this.btnWare.Size = new System.Drawing.Size(75, 23);
+            this.btnWare.TabIndex = 6;
+            this.btnWare.Text = "Bodegas";
+            this.btnWare.UseVisualStyleBackColor = true;
             // 
-            // txtWare
+            // btnEmployes
             // 
-            this.txtWare.Location = new System.Drawing.Point(165, 137);
-            this.txtWare.Name = "txtWare";
-            this.txtWare.Size = new System.Drawing.Size(75, 23);
-            this.txtWare.TabIndex = 6;
-            this.txtWare.Text = "Bodegas";
-            this.txtWare.UseVisualStyleBackColor = true;
+            this.btnEmployes.Location = new System.Drawing.Point(885, 149);
+            this.btnEmployes.Name = "btnEmployes";
+            this.btnEmployes.Size = new System.Drawing.Size(75, 23);
+            this.btnEmployes.TabIndex = 7;
+            this.btnEmployes.Text = "Empleados";
+            this.btnEmployes.UseVisualStyleBackColor = true;
             // 
-            // txtEmployes
+            // btnProducts
             // 
-            this.txtEmployes.Location = new System.Drawing.Point(304, 136);
-            this.txtEmployes.Name = "txtEmployes";
-            this.txtEmployes.Size = new System.Drawing.Size(75, 23);
-            this.txtEmployes.TabIndex = 7;
-            this.txtEmployes.Text = "Empleados";
-            this.txtEmployes.UseVisualStyleBackColor = true;
+            this.btnProducts.Location = new System.Drawing.Point(298, 76);
+            this.btnProducts.Name = "btnProducts";
+            this.btnProducts.Size = new System.Drawing.Size(75, 23);
+            this.btnProducts.TabIndex = 1;
+            this.btnProducts.Text = "Productos";
+            this.btnProducts.UseVisualStyleBackColor = true;
+            this.btnProducts.Click += new System.EventHandler(this.txtProducts_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImage = global::AlexiEconomy.Properties.Resources.Logo;
+            this.pictureBox1.Location = new System.Drawing.Point(491, 265);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(276, 234);
+            this.pictureBox1.TabIndex = 8;
+            this.pictureBox1.TabStop = false;
             // 
             // Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.txtEmployes);
-            this.Controls.Add(this.txtWare);
-            this.Controls.Add(this.txtCustomers);
-            this.Controls.Add(this.txtSuppliers);
-            this.Controls.Add(this.txtInventory);
-            this.Controls.Add(this.txtaSales);
-            this.Controls.Add(this.txtProducts);
+            this.ClientSize = new System.Drawing.Size(1327, 602);
+            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.btnEmployes);
+            this.Controls.Add(this.btnWare);
+            this.Controls.Add(this.btnCustomers);
+            this.Controls.Add(this.btnSuppliers);
+            this.Controls.Add(this.btnInventory);
+            this.Controls.Add(this.btnaSales);
+            this.Controls.Add(this.btnProducts);
             this.Controls.Add(this.label1);
             this.Name = "Menu";
             this.Text = "Menu";
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -134,12 +148,13 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button txtProducts;
-        private System.Windows.Forms.Button txtaSales;
-        private System.Windows.Forms.Button txtInventory;
-        private System.Windows.Forms.Button txtSuppliers;
-        private System.Windows.Forms.Button txtCustomers;
-        private System.Windows.Forms.Button txtWare;
-        private System.Windows.Forms.Button txtEmployes;
+        private System.Windows.Forms.Button btnaSales;
+        private System.Windows.Forms.Button btnInventory;
+        private System.Windows.Forms.Button btnSuppliers;
+        private System.Windows.Forms.Button btnCustomers;
+        private System.Windows.Forms.Button btnWare;
+        private System.Windows.Forms.Button btnEmployes;
+        private System.Windows.Forms.Button btnProducts;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
