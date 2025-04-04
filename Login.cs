@@ -27,25 +27,25 @@ namespace AlexiEconomy
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
             string patron = @"^[a-zA-Z\s]+$";
-            string texto = txtUsuario.Text;
+            string texto = txtUser.Text;
 
             if (!Regex.IsMatch(texto, patron) && texto != "")
             {
 
                 MessageBox.Show("Solo se permiten letras y espacios.");
 
-                txtUsuario.Text = texto.Remove(texto.Length - 1);
+                txtUser.Text = texto.Remove(texto.Length - 1);
 
-                txtUsuario.SelectionStart = txtUsuario.Text.Length;
+                txtUser.SelectionStart = txtUser.Text.Length;
             }
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (txtUsuario.Text == "alexi" && txtContraseña.Text == "panfleto")
+            if (txtUser.Text == "alexi" && txtPass.Text == "1")
             {
-                Menu open = new Menu();
-                open.Show();
+                Menu _menu = new Menu();
+                _menu.Show();
                 this.Hide();
             }
             else {

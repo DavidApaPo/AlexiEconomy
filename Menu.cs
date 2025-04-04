@@ -21,5 +21,12 @@ namespace AlexiEconomy
         {
 
         }
+
+        private void txtProducts_Click(object sender, EventArgs e)
+        {
+            AltaProductos _altaProductos = new AltaProductos();
+            _altaProductos.Show();
+            this.Hide();        
+        }
     }
 }
