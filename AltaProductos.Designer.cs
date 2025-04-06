@@ -51,6 +51,8 @@
             this.label9 = new System.Windows.Forms.Label();
             this.txtStock = new System.Windows.Forms.TextBox();
             this.btnSerch = new System.Windows.Forms.Button();
+            this.label10 = new System.Windows.Forms.Label();
+            this.txtCategory = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label1
@@ -88,6 +90,7 @@
             this.label4.Size = new System.Drawing.Size(73, 16);
             this.label4.TabIndex = 3;
             this.label4.Text = "Aplicar IVA";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // label5
             // 
@@ -263,6 +266,7 @@
             this.label9.Size = new System.Drawing.Size(75, 16);
             this.label9.TabIndex = 22;
             this.label9.Text = "Existencias";
+            this.label9.Click += new System.EventHandler(this.label9_Click);
             // 
             // txtStock
             // 
@@ -282,11 +286,32 @@
             this.btnSerch.TabIndex = 24;
             this.btnSerch.UseVisualStyleBackColor = true;
             // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(890, 168);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(66, 16);
+            this.label10.TabIndex = 25;
+            this.label10.Text = "Categoria";
+            this.label10.Click += new System.EventHandler(this.label10_Click);
+            // 
+            // txtCategory
+            // 
+            this.txtCategory.Location = new System.Drawing.Point(876, 207);
+            this.txtCategory.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtCategory.Name = "txtCategory";
+            this.txtCategory.Size = new System.Drawing.Size(100, 22);
+            this.txtCategory.TabIndex = 26;
+            this.txtCategory.TextChanged += new System.EventHandler(this.textBox1_TextChanged_1);
+            // 
             // AltaProductos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1469, 606);
+            this.Controls.Add(this.txtCategory);
+            this.Controls.Add(this.label10);
             this.Controls.Add(this.btnSerch);
             this.Controls.Add(this.txtStock);
             this.Controls.Add(this.label9);
@@ -344,5 +369,7 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.TextBox txtStock;
         private System.Windows.Forms.Button btnSerch;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.TextBox txtCategory;
     }
 }
