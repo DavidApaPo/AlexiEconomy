@@ -43,8 +43,12 @@
             this.txtPrice = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.txtBuy = new System.Windows.Forms.TextBox();
-            this.btnBack = new System.Windows.Forms.Button();
             this.btn = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.btnBack = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -189,9 +193,44 @@
             this.txtBuy.Size = new System.Drawing.Size(100, 22);
             this.txtBuy.TabIndex = 14;
             // 
+            // btn
+            // 
+            this.btn.Location = new System.Drawing.Point(985, 557);
+            this.btn.Name = "btn";
+            this.btn.Size = new System.Drawing.Size(98, 23);
+            this.btn.TabIndex = 16;
+            this.btn.Text = "Dar de alta";
+            this.btn.UseVisualStyleBackColor = true;
+            this.btn.Click += new System.EventHandler(this.btn_Click);
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(1137, 24);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(100, 22);
+            this.textBox1.TabIndex = 17;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(1044, 30);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(49, 16);
+            this.label7.TabIndex = 18;
+            this.label7.Text = "Buscar";
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(373, 415);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.RowTemplate.Height = 24;
+            this.dataGridView1.Size = new System.Drawing.Size(240, 150);
+            this.dataGridView1.TabIndex = 19;
+            // 
             // btnBack
             // 
-            this.btnBack.BackgroundImage = global::AlexiEconomy.Properties.Resources.atra;
             this.btnBack.Location = new System.Drawing.Point(-3, 9);
             this.btnBack.Name = "btnBack";
             this.btnBack.Size = new System.Drawing.Size(54, 53);
@@ -199,20 +238,14 @@
             this.btnBack.UseVisualStyleBackColor = true;
             this.btnBack.Click += new System.EventHandler(this.button1_Click);
             // 
-            // btn
-            // 
-            this.btn.Location = new System.Drawing.Point(995, 561);
-            this.btn.Name = "btn";
-            this.btn.Size = new System.Drawing.Size(98, 23);
-            this.btn.TabIndex = 16;
-            this.btn.Text = "Dar de alta";
-            this.btn.UseVisualStyleBackColor = true;
-            // 
             // AltaProductos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1286, 609);
+            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.btn);
             this.Controls.Add(this.btnBack);
             this.Controls.Add(this.txtBuy);
@@ -232,6 +265,8 @@
             this.Controls.Add(this.label1);
             this.Name = "AltaProductos";
             this.Text = "AltaProductos";
+            this.Load += new System.EventHandler(this.AltaProductos_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -256,5 +291,8 @@
         private System.Windows.Forms.TextBox txtBuy;
         private System.Windows.Forms.Button btnBack;
         private System.Windows.Forms.Button btn;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.DataGridView dataGridView1;
     }
 }
