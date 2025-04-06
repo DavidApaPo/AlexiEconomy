@@ -29,9 +29,11 @@ namespace AlexiEconomy
             this.Hide();        
         }
 
-        private void btnaSales_Click(object sender, EventArgs e)
+        private void btnSales_Click(object sender, EventArgs e)
         {
-
+             Venta _venta = new Venta();
+            _venta.Show();
+            this.Hide();
         }
     }
 }
