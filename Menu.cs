@@ -28,5 +28,10 @@ namespace AlexiEconomy
             _altaProductos.Show();
             this.Hide();        
         }
+
+        private void btnaSales_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
