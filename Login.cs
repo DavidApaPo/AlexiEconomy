@@ -24,7 +24,7 @@ namespace AlexiEconomy
 
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
+        private void txtUser_TextChanged(object sender, EventArgs e)
         {
             string patron = @"^[a-zA-Z\s]+$";
             string texto = txtUser.Text;
@@ -38,6 +38,7 @@ namespace AlexiEconomy
 
                 txtUser.SelectionStart = txtUser.Text.Length;
             }
+           
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -72,8 +73,23 @@ namespace AlexiEconomy
         {
 
         }
+        private void txtPass_TextChanged(object sender, EventArgs e)
+        {
+            string patron = @"^[a-zA-Z\s]+$";
+            string texto = txtPass.Text;
 
-        private void txtContraseña_TextChanged(object sender, EventArgs e)
+            if (!Regex.IsMatch(texto, patron) && texto != "")
+            {
+
+                MessageBox.Show("Solo se permiten letras y espacios.");
+
+                txtPass.Text = texto.Remove(texto.Length - 1);
+
+                txtPass.SelectionStart = txtPass.Text.Length;
+            }
+        }
+
+        private void txtUse_TextChanged(object sender, EventArgs e)
         {
 
         }

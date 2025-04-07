@@ -30,9 +30,10 @@ namespace AlexiEconomy
 
         private void btnSales_Click(object sender, EventArgs e)
         {
-             Venta _venta = new Venta();
+            Venta _venta = new Venta();
             _venta.Show();
             this.Hide();
+        }
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
 

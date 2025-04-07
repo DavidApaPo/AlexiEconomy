@@ -66,6 +66,13 @@ namespace AlexiEconomy.Properties {
         internal static System.Drawing.Bitmap atra {
             get {
                 object obj = ResourceManager.GetObject("atra", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap bodega_imag {
             get {
                 object obj = ResourceManager.GetObject("bodega_imag", resourceCulture);
@@ -76,9 +83,6 @@ namespace AlexiEconomy.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Logo {
-            get {
-                object obj = ResourceManager.GetObject("Logo", resourceCulture);
         internal static System.Drawing.Bitmap clientes_imag {
             get {
                 object obj = ResourceManager.GetObject("clientes_imag", resourceCulture);
@@ -89,9 +93,6 @@ namespace AlexiEconomy.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Lupa {
-            get {
-                object obj = ResourceManager.GetObject("Lupa", resourceCulture);
         internal static System.Drawing.Bitmap empleados_imag {
             get {
                 object obj = ResourceManager.GetObject("empleados_imag", resourceCulture);
@@ -112,16 +113,6 @@ namespace AlexiEconomy.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Image1 {
-            get {
-                object obj = ResourceManager.GetObject("Image1", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap inventario_imag {
             get {
                 object obj = ResourceManager.GetObject("inventario_imag", resourceCulture);
@@ -135,6 +126,26 @@ namespace AlexiEconomy.Properties {
         internal static System.Drawing.Bitmap login {
             get {
                 object obj = ResourceManager.GetObject("login", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Logo {
+            get {
+                object obj = ResourceManager.GetObject("Logo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Lupa {
+            get {
+                object obj = ResourceManager.GetObject("Lupa", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
