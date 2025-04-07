@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
+            this.lbMenu = new System.Windows.Forms.Label();
             this.btnSales = new System.Windows.Forms.Button();
             this.btnInventory = new System.Windows.Forms.Button();
             this.btnSuppliers = new System.Windows.Forms.Button();
@@ -36,22 +36,23 @@
             this.btnWare = new System.Windows.Forms.Button();
             this.btnEmployes = new System.Windows.Forms.Button();
             this.btnProducts = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pbLogo = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).BeginInit();
             this.SuspendLayout();
             // 
-            // label1
+            // lbMenu
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("NSimSun", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label1.Location = new System.Drawing.Point(65, 44);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(62, 24);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Menu";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            this.lbMenu.AutoSize = true;
+            this.lbMenu.Font = new System.Drawing.Font("NSimSun", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbMenu.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.lbMenu.Location = new System.Drawing.Point(49, 36);
+            this.lbMenu.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbMenu.Name = "lbMenu";
+            this.lbMenu.Size = new System.Drawing.Size(53, 19);
+            this.lbMenu.TabIndex = 0;
+            this.lbMenu.Text = "Menu";
+            this.lbMenu.Click += new System.EventHandler(this.label1_Click);
             // 
             // btnSales
             // 
@@ -62,10 +63,10 @@
             this.btnSales.Font = new System.Drawing.Font("Microsoft New Tai Lue", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSales.Image = global::AlexiEconomy.Properties.Resources.ventas_imag;
             this.btnSales.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnSales.Location = new System.Drawing.Point(372, 100);
-            this.btnSales.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnSales.Location = new System.Drawing.Point(279, 81);
+            this.btnSales.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnSales.Name = "btnSales";
-            this.btnSales.Size = new System.Drawing.Size(192, 123);
+            this.btnSales.Size = new System.Drawing.Size(144, 100);
             this.btnSales.TabIndex = 2;
             this.btnSales.Text = "Ventas";
             this.btnSales.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -79,10 +80,10 @@
             this.btnInventory.Font = new System.Drawing.Font("Microsoft New Tai Lue", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnInventory.Image = global::AlexiEconomy.Properties.Resources.inventario_imag;
             this.btnInventory.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnInventory.Location = new System.Drawing.Point(584, 100);
-            this.btnInventory.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnInventory.Location = new System.Drawing.Point(438, 81);
+            this.btnInventory.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnInventory.Name = "btnInventory";
-            this.btnInventory.Size = new System.Drawing.Size(192, 132);
+            this.btnInventory.Size = new System.Drawing.Size(144, 107);
             this.btnInventory.TabIndex = 3;
             this.btnInventory.Text = "Inventario";
             this.btnInventory.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -94,10 +95,10 @@
             this.btnSuppliers.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnSuppliers.Font = new System.Drawing.Font("Microsoft New Tai Lue", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSuppliers.Image = global::AlexiEconomy.Properties.Resources.probedores_imag;
-            this.btnSuppliers.Location = new System.Drawing.Point(799, 100);
-            this.btnSuppliers.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnSuppliers.Location = new System.Drawing.Point(599, 81);
+            this.btnSuppliers.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnSuppliers.Name = "btnSuppliers";
-            this.btnSuppliers.Size = new System.Drawing.Size(192, 123);
+            this.btnSuppliers.Size = new System.Drawing.Size(144, 100);
             this.btnSuppliers.TabIndex = 4;
             this.btnSuppliers.Text = "Proveedores";
             this.btnSuppliers.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -110,10 +111,10 @@
             this.btnCustomers.Font = new System.Drawing.Font("Microsoft New Tai Lue", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCustomers.Image = global::AlexiEconomy.Properties.Resources.clientes_imag;
             this.btnCustomers.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnCustomers.Location = new System.Drawing.Point(209, 262);
-            this.btnCustomers.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnCustomers.Location = new System.Drawing.Point(157, 213);
+            this.btnCustomers.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnCustomers.Name = "btnCustomers";
-            this.btnCustomers.Size = new System.Drawing.Size(192, 123);
+            this.btnCustomers.Size = new System.Drawing.Size(144, 100);
             this.btnCustomers.TabIndex = 5;
             this.btnCustomers.Text = "Clientes";
             this.btnCustomers.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -126,10 +127,10 @@
             this.btnWare.Font = new System.Drawing.Font("Microsoft New Tai Lue", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnWare.Image = global::AlexiEconomy.Properties.Resources.bodega_imag;
             this.btnWare.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnWare.Location = new System.Drawing.Point(449, 262);
-            this.btnWare.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnWare.Location = new System.Drawing.Point(337, 213);
+            this.btnWare.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnWare.Name = "btnWare";
-            this.btnWare.Size = new System.Drawing.Size(192, 123);
+            this.btnWare.Size = new System.Drawing.Size(144, 100);
             this.btnWare.TabIndex = 6;
             this.btnWare.Text = "Bodegas";
             this.btnWare.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -142,10 +143,10 @@
             this.btnEmployes.Font = new System.Drawing.Font("Microsoft New Tai Lue", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEmployes.Image = global::AlexiEconomy.Properties.Resources.empleados_imag;
             this.btnEmployes.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnEmployes.Location = new System.Drawing.Point(713, 262);
-            this.btnEmployes.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnEmployes.Location = new System.Drawing.Point(535, 213);
+            this.btnEmployes.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnEmployes.Name = "btnEmployes";
-            this.btnEmployes.Size = new System.Drawing.Size(192, 123);
+            this.btnEmployes.Size = new System.Drawing.Size(144, 100);
             this.btnEmployes.TabIndex = 7;
             this.btnEmployes.Text = "Empleados";
             this.btnEmployes.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -158,25 +159,25 @@
             this.btnProducts.Font = new System.Drawing.Font("Microsoft New Tai Lue", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnProducts.Image = global::AlexiEconomy.Properties.Resources.producto_imag;
             this.btnProducts.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnProducts.Location = new System.Drawing.Point(151, 100);
-            this.btnProducts.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnProducts.Location = new System.Drawing.Point(113, 81);
+            this.btnProducts.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnProducts.Name = "btnProducts";
-            this.btnProducts.Size = new System.Drawing.Size(192, 123);
+            this.btnProducts.Size = new System.Drawing.Size(144, 100);
             this.btnProducts.TabIndex = 1;
             this.btnProducts.Text = "Productos";
             this.btnProducts.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnProducts.UseVisualStyleBackColor = false;
             this.btnProducts.Click += new System.EventHandler(this.txtProducts_Click);
             // 
-            // pictureBox1
+            // pbLogo
             // 
-            this.pictureBox1.BackgroundImage = global::AlexiEconomy.Properties.Resources.Logo;
-            this.pictureBox1.Location = new System.Drawing.Point(935, 262);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(279, 245);
-            this.pictureBox1.TabIndex = 8;
-            this.pictureBox1.TabStop = false;
+            this.pbLogo.BackgroundImage = global::AlexiEconomy.Properties.Resources.Logo;
+            this.pbLogo.Location = new System.Drawing.Point(701, 213);
+            this.pbLogo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pbLogo.Name = "pbLogo";
+            this.pbLogo.Size = new System.Drawing.Size(252, 218);
+            this.pbLogo.TabIndex = 8;
+            this.pbLogo.TabStop = false;
             // 
             // panel1
             // 
@@ -190,10 +191,10 @@
             // 
             // Menu
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1327, 602);
-            this.Controls.Add(this.pictureBox1);
+            this.ClientSize = new System.Drawing.Size(995, 489);
+            this.Controls.Add(this.pbLogo);
             this.Controls.Add(this.btnEmployes);
             this.Controls.Add(this.btnWare);
             this.Controls.Add(this.btnCustomers);
@@ -201,11 +202,11 @@
             this.Controls.Add(this.btnInventory);
             this.Controls.Add(this.btnSales);
             this.Controls.Add(this.btnProducts);
-            this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Controls.Add(this.lbMenu);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Menu";
             this.Text = "Menu";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -213,7 +214,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lbMenu;
         private System.Windows.Forms.Button btnSales;
         private System.Windows.Forms.Button btnInventory;
         private System.Windows.Forms.Button btnSuppliers;
@@ -221,7 +222,7 @@
         private System.Windows.Forms.Button btnWare;
         private System.Windows.Forms.Button btnEmployes;
         private System.Windows.Forms.Button btnProducts;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pbLogo;
         private System.Windows.Forms.Button txtProducts;
         private System.Windows.Forms.Button txtaSales;
         private System.Windows.Forms.Button txtInventory;

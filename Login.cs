@@ -55,10 +55,6 @@ namespace AlexiEconomy
 
         }
 
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-        }
-
         private void tabPage2_Click(object sender, EventArgs e)
         {
 
@@ -71,25 +67,24 @@ namespace AlexiEconomy
 
         private void panel2_Paint(object sender, PaintEventArgs e)
         {
-
+            SendToBack();
         }
         private void txtPass_TextChanged(object sender, EventArgs e)
         {
-            string patron = @"^[a-zA-Z\s]+$";
-            string texto = txtPass.Text;
-
-            if (!Regex.IsMatch(texto, patron) && texto != "")
-            {
-
-                MessageBox.Show("Solo se permiten letras y espacios.");
-
-                txtPass.Text = texto.Remove(texto.Length - 1);
-
-                txtPass.SelectionStart = txtPass.Text.Length;
-            }
+        
         }
 
         private void txtUse_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void gbLogin_Enter(object sender, EventArgs e)
+        {
+            BringToFront();
+        }
+
+        private void paneBackground_Paint(object sender, PaintEventArgs e)
         {
 
         }
