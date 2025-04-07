@@ -22,14 +22,18 @@ namespace AlexiEconomy
 
         }
 
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
         private void txtProducts_Click(object sender, EventArgs e)
         {
+            AltaProductos _altaProductos = new AltaProductos();
+            _altaProductos.Show();
+            this.Hide();        
+        }
 
+        private void btnSales_Click(object sender, EventArgs e)
+        {
+             Venta _venta = new Venta();
+            _venta.Show();
+            this.Hide();
         }
     }
 }
