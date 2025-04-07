@@ -240,10 +240,11 @@
             // 
             // btnBack
             // 
+            this.btnBack.BackgroundImage = global::AlexiEconomy.Properties.Resources.atra;
             this.btnBack.Location = new System.Drawing.Point(12, 9);
             this.btnBack.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnBack.Name = "btnBack";
-            this.btnBack.Size = new System.Drawing.Size(64, 65);
+            this.btnBack.Size = new System.Drawing.Size(53, 54);
             this.btnBack.TabIndex = 15;
             this.btnBack.UseVisualStyleBackColor = true;
             this.btnBack.Click += new System.EventHandler(this.button1_Click);
