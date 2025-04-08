@@ -62,11 +62,6 @@ namespace AlexiEconomy
 
         }
 
-        private void btn_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void AltaProductos_Load(object sender, EventArgs e)
         {
 
@@ -177,6 +172,44 @@ namespace AlexiEconomy
                     }
 
         private void dataGridView1_CellContentClick_3(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void tableProducts_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void lbName_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lbProducts_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnSave_Click(object sender, EventArgs e)
+        {
+            int num = TableProducts.Rows.Add();
+
+            TableProducts.Rows[num].Cells[0].Value= txtName.Text;
+            TableProducts.Rows[num].Cells[1].Value = cbMili.Text;
+            TableProducts.Rows[num].Cells[2].Value = txtPrice.Text;
+            TableProducts.Rows[num].Cells[3].Value = txtPriceBuy.Text;
+            TableProducts.Rows[num].Cells[4].Value = txtStock.Text;
+            TableProducts.Rows[num].Cells[5].Value = txtCategory.Text;
+
+        }
+
+        private void TableProducts_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
         {
 
         }
