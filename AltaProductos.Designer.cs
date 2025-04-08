@@ -53,6 +53,10 @@
             this.btnSerch = new System.Windows.Forms.Button();
             this.lbCategory = new System.Windows.Forms.Label();
             this.txtCategory = new System.Windows.Forms.TextBox();
+            this.tableProducts = new System.Windows.Forms.DataGridView();
+            this.dataName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            ((System.ComponentModel.ISupportInitialize)(this.tableProducts)).BeginInit();
             this.SuspendLayout();
             // 
             // lbName
@@ -139,7 +143,7 @@
             // txtName
             // 
             this.txtName.Location = new System.Drawing.Point(62, 75);
-            this.txtName.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtName.Margin = new System.Windows.Forms.Padding(2);
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(76, 20);
             this.txtName.TabIndex = 8;
@@ -155,7 +159,7 @@
             "40",
             "45"});
             this.cbMili.Location = new System.Drawing.Point(198, 75);
-            this.cbMili.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cbMili.Margin = new System.Windows.Forms.Padding(2);
             this.cbMili.Name = "cbMili";
             this.cbMili.Size = new System.Drawing.Size(92, 21);
             this.cbMili.TabIndex = 9;
@@ -169,7 +173,7 @@
             "No",
             "Exento"});
             this.cbIVA.Location = new System.Drawing.Point(396, 75);
-            this.cbIVA.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cbIVA.Margin = new System.Windows.Forms.Padding(2);
             this.cbIVA.Name = "cbIVA";
             this.cbIVA.Size = new System.Drawing.Size(92, 21);
             this.cbIVA.TabIndex = 10;
@@ -183,7 +187,7 @@
             "Litros",
             ""});
             this.cbUnit.Location = new System.Drawing.Point(608, 75);
-            this.cbUnit.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cbUnit.Margin = new System.Windows.Forms.Padding(2);
             this.cbUnit.Name = "cbUnit";
             this.cbUnit.Size = new System.Drawing.Size(92, 21);
             this.cbUnit.TabIndex = 11;
@@ -192,7 +196,7 @@
             // txtPrice
             // 
             this.txtPrice.Location = new System.Drawing.Point(62, 176);
-            this.txtPrice.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtPrice.Margin = new System.Windows.Forms.Padding(2);
             this.txtPrice.Name = "txtPrice";
             this.txtPrice.Size = new System.Drawing.Size(76, 20);
             this.txtPrice.TabIndex = 12;
@@ -201,7 +205,7 @@
             // txtPriceIVA
             // 
             this.txtPriceIVA.Location = new System.Drawing.Point(198, 176);
-            this.txtPriceIVA.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtPriceIVA.Margin = new System.Windows.Forms.Padding(2);
             this.txtPriceIVA.Name = "txtPriceIVA";
             this.txtPriceIVA.Size = new System.Drawing.Size(76, 20);
             this.txtPriceIVA.TabIndex = 13;
@@ -210,7 +214,7 @@
             // txtPriceBuy
             // 
             this.txtPriceBuy.Location = new System.Drawing.Point(403, 168);
-            this.txtPriceBuy.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtPriceBuy.Margin = new System.Windows.Forms.Padding(2);
             this.txtPriceBuy.Name = "txtPriceBuy";
             this.txtPriceBuy.Size = new System.Drawing.Size(76, 20);
             this.txtPriceBuy.TabIndex = 14;
@@ -219,7 +223,7 @@
             // btnSave
             // 
             this.btnSave.Location = new System.Drawing.Point(924, 467);
-            this.btnSave.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnSave.Margin = new System.Windows.Forms.Padding(2);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(74, 19);
             this.btnSave.TabIndex = 16;
@@ -230,7 +234,7 @@
             // txtSeach
             // 
             this.txtSeach.Location = new System.Drawing.Point(838, 21);
-            this.txtSeach.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtSeach.Margin = new System.Windows.Forms.Padding(2);
             this.txtSeach.Name = "txtSeach";
             this.txtSeach.Size = new System.Drawing.Size(76, 20);
             this.txtSeach.TabIndex = 17;
@@ -251,7 +255,7 @@
             // 
             this.btnBack.BackgroundImage = global::AlexiEconomy.Properties.Resources.atra;
             this.btnBack.Location = new System.Drawing.Point(9, 7);
-            this.btnBack.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnBack.Margin = new System.Windows.Forms.Padding(2);
             this.btnBack.Name = "btnBack";
             this.btnBack.Size = new System.Drawing.Size(40, 44);
             this.btnBack.TabIndex = 15;
@@ -261,7 +265,7 @@
             // btnDelete
             // 
             this.btnDelete.Location = new System.Drawing.Point(1017, 467);
-            this.btnDelete.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnDelete.Margin = new System.Windows.Forms.Padding(2);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(74, 19);
             this.btnDelete.TabIndex = 20;
@@ -282,7 +286,7 @@
             // txtStock
             // 
             this.txtStock.Location = new System.Drawing.Point(541, 168);
-            this.txtStock.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtStock.Margin = new System.Windows.Forms.Padding(2);
             this.txtStock.Name = "txtStock";
             this.txtStock.Size = new System.Drawing.Size(76, 20);
             this.txtStock.TabIndex = 23;
@@ -292,7 +296,7 @@
             // 
             this.btnSerch.BackgroundImage = global::AlexiEconomy.Properties.Resources.Lupa;
             this.btnSerch.Location = new System.Drawing.Point(924, 20);
-            this.btnSerch.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnSerch.Margin = new System.Windows.Forms.Padding(2);
             this.btnSerch.Name = "btnSerch";
             this.btnSerch.Size = new System.Drawing.Size(21, 25);
             this.btnSerch.TabIndex = 24;
@@ -312,17 +316,44 @@
             // txtCategory
             // 
             this.txtCategory.Location = new System.Drawing.Point(657, 168);
-            this.txtCategory.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtCategory.Margin = new System.Windows.Forms.Padding(2);
             this.txtCategory.Name = "txtCategory";
             this.txtCategory.Size = new System.Drawing.Size(76, 20);
             this.txtCategory.TabIndex = 26;
             this.txtCategory.TextChanged += new System.EventHandler(this.textBox1_TextChanged_1);
             // 
+            // tableProducts
+            // 
+            this.tableProducts.AllowUserToAddRows = false;
+            this.tableProducts.AllowUserToDeleteRows = false;
+            this.tableProducts.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.tableProducts.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataName,
+            this.Column1});
+            this.tableProducts.Location = new System.Drawing.Point(323, 467);
+            this.tableProducts.Name = "tableProducts";
+            this.tableProducts.ReadOnly = true;
+            this.tableProducts.Size = new System.Drawing.Size(164, 64);
+            this.tableProducts.TabIndex = 27;
+            // 
+            // dataName
+            // 
+            this.dataName.HeaderText = "Nombre";
+            this.dataName.Name = "dataName";
+            this.dataName.ReadOnly = true;
+            // 
+            // Column1
+            // 
+            this.Column1.HeaderText = "Column1";
+            this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
+            // 
             // AltaProductos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1102, 492);
+            this.ClientSize = new System.Drawing.Size(1540, 681);
+            this.Controls.Add(this.tableProducts);
             this.Controls.Add(this.txtCategory);
             this.Controls.Add(this.lbCategory);
             this.Controls.Add(this.btnSerch);
@@ -348,10 +379,13 @@
             this.Controls.Add(this.lbProducts);
             this.Controls.Add(this.lbMili);
             this.Controls.Add(this.lbName);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "AltaProductos";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "AltaProductos";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.AltaProductos_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.tableProducts)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -384,5 +418,8 @@
         private System.Windows.Forms.Button btnSerch;
         private System.Windows.Forms.Label lbCategory;
         private System.Windows.Forms.TextBox txtCategory;
+        private System.Windows.Forms.DataGridView tableProducts;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
     }
 }

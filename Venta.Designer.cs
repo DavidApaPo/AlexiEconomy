@@ -71,7 +71,7 @@
             // txtUnits
             // 
             this.txtUnits.Location = new System.Drawing.Point(79, 70);
-            this.txtUnits.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtUnits.Margin = new System.Windows.Forms.Padding(2);
             this.txtUnits.Name = "txtUnits";
             this.txtUnits.Size = new System.Drawing.Size(76, 20);
             this.txtUnits.TabIndex = 3;
@@ -79,7 +79,7 @@
             // txtName
             // 
             this.txtName.Location = new System.Drawing.Point(102, 30);
-            this.txtName.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtName.Margin = new System.Windows.Forms.Padding(2);
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(76, 20);
             this.txtName.TabIndex = 5;
@@ -87,7 +87,7 @@
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(951, 449);
-            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(56, 19);
             this.button1.TabIndex = 6;
@@ -97,7 +97,7 @@
             // txtPrice
             // 
             this.txtPrice.Location = new System.Drawing.Point(257, 70);
-            this.txtPrice.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtPrice.Margin = new System.Windows.Forms.Padding(2);
             this.txtPrice.Name = "txtPrice";
             this.txtPrice.Size = new System.Drawing.Size(76, 20);
             this.txtPrice.TabIndex = 7;
@@ -114,9 +114,11 @@
             this.Controls.Add(this.lbPrice);
             this.Controls.Add(this.lbCantidad);
             this.Controls.Add(this.lbName);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Venta";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.WindowsDefaultBounds;
             this.Text = "Venta";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.ResumeLayout(false);
             this.PerformLayout();
 

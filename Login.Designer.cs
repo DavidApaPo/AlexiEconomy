@@ -29,16 +29,16 @@
         private void InitializeComponent()
         {
             this.paneBackground = new System.Windows.Forms.Panel();
-            this.lbUser = new System.Windows.Forms.Label();
-            this.lbContraseña = new System.Windows.Forms.Label();
-            this.btnLogin = new System.Windows.Forms.Button();
-            this.pictureProfile = new System.Windows.Forms.PictureBox();
+            this.gbLogin = new System.Windows.Forms.GroupBox();
             this.txtPass = new System.Windows.Forms.TextBox();
             this.txtUser = new System.Windows.Forms.TextBox();
-            this.gbLogin = new System.Windows.Forms.GroupBox();
+            this.btnLogin = new System.Windows.Forms.Button();
+            this.pictureProfile = new System.Windows.Forms.PictureBox();
+            this.lbContraseña = new System.Windows.Forms.Label();
+            this.lbUser = new System.Windows.Forms.Label();
             this.paneBackground.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureProfile)).BeginInit();
             this.gbLogin.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureProfile)).BeginInit();
             this.SuspendLayout();
             // 
             // paneBackground
@@ -53,28 +53,40 @@
             this.paneBackground.TabIndex = 5;
             this.paneBackground.Paint += new System.Windows.Forms.PaintEventHandler(this.paneBackground_Paint);
             // 
-            // lbUser
+            // gbLogin
             // 
-            this.lbUser.AutoSize = true;
-            this.lbUser.Font = new System.Drawing.Font("Bookman Old Style", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbUser.Location = new System.Drawing.Point(155, 186);
-            this.lbUser.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lbUser.Name = "lbUser";
-            this.lbUser.Size = new System.Drawing.Size(72, 19);
-            this.lbUser.TabIndex = 2;
-            this.lbUser.Text = "Usuario";
-            this.lbUser.Click += new System.EventHandler(this.label1_Click);
+            this.gbLogin.Controls.Add(this.txtPass);
+            this.gbLogin.Controls.Add(this.txtUser);
+            this.gbLogin.Controls.Add(this.btnLogin);
+            this.gbLogin.Controls.Add(this.pictureProfile);
+            this.gbLogin.Controls.Add(this.lbContraseña);
+            this.gbLogin.Controls.Add(this.lbUser);
+            this.gbLogin.Location = new System.Drawing.Point(37, 64);
+            this.gbLogin.Name = "gbLogin";
+            this.gbLogin.Size = new System.Drawing.Size(358, 390);
+            this.gbLogin.TabIndex = 6;
+            this.gbLogin.TabStop = false;
+            this.gbLogin.Enter += new System.EventHandler(this.txtUse_TextChanged);
             // 
-            // lbContraseña
+            // txtPass
             // 
-            this.lbContraseña.AutoSize = true;
-            this.lbContraseña.Font = new System.Drawing.Font("Bookman Old Style", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbContraseña.Location = new System.Drawing.Point(142, 253);
-            this.lbContraseña.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lbContraseña.Name = "lbContraseña";
-            this.lbContraseña.Size = new System.Drawing.Size(102, 19);
-            this.lbContraseña.TabIndex = 2;
-            this.lbContraseña.Text = "Contraseña";
+            this.txtPass.AcceptsTab = true;
+            this.txtPass.Location = new System.Drawing.Point(144, 284);
+            this.txtPass.Name = "txtPass";
+            this.txtPass.PasswordChar = '*';
+            this.txtPass.Size = new System.Drawing.Size(100, 20);
+            this.txtPass.TabIndex = 1;
+            this.txtPass.TextChanged += new System.EventHandler(this.txtPass_TextChanged);
+            // 
+            // txtUser
+            // 
+            this.txtUser.AcceptsTab = true;
+            this.txtUser.Location = new System.Drawing.Point(144, 220);
+            this.txtUser.Margin = new System.Windows.Forms.Padding(2);
+            this.txtUser.Name = "txtUser";
+            this.txtUser.Size = new System.Drawing.Size(95, 20);
+            this.txtUser.TabIndex = 0;
+            this.txtUser.TextChanged += new System.EventHandler(this.txtUser_TextChanged);
             // 
             // btnLogin
             // 
@@ -99,40 +111,28 @@
             this.pictureProfile.TabStop = false;
             this.pictureProfile.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
-            // txtPass
+            // lbContraseña
             // 
-            this.txtPass.AcceptsTab = true;
-            this.txtPass.Location = new System.Drawing.Point(144, 284);
-            this.txtPass.Name = "txtPass";
-            this.txtPass.PasswordChar = '*';
-            this.txtPass.Size = new System.Drawing.Size(100, 20);
-            this.txtPass.TabIndex = 1;
-            this.txtPass.TextChanged += new System.EventHandler(this.txtPass_TextChanged);
+            this.lbContraseña.AutoSize = true;
+            this.lbContraseña.Font = new System.Drawing.Font("Bookman Old Style", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbContraseña.Location = new System.Drawing.Point(142, 253);
+            this.lbContraseña.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbContraseña.Name = "lbContraseña";
+            this.lbContraseña.Size = new System.Drawing.Size(102, 19);
+            this.lbContraseña.TabIndex = 2;
+            this.lbContraseña.Text = "Contraseña";
             // 
-            // txtUser
+            // lbUser
             // 
-            this.txtUser.AcceptsTab = true;
-            this.txtUser.Location = new System.Drawing.Point(144, 220);
-            this.txtUser.Margin = new System.Windows.Forms.Padding(2);
-            this.txtUser.Name = "txtUser";
-            this.txtUser.Size = new System.Drawing.Size(95, 20);
-            this.txtUser.TabIndex = 0;
-            this.txtUser.TextChanged += new System.EventHandler(this.txtUser_TextChanged);
-            // 
-            // gbLogin
-            // 
-            this.gbLogin.Controls.Add(this.txtPass);
-            this.gbLogin.Controls.Add(this.txtUser);
-            this.gbLogin.Controls.Add(this.btnLogin);
-            this.gbLogin.Controls.Add(this.pictureProfile);
-            this.gbLogin.Controls.Add(this.lbContraseña);
-            this.gbLogin.Controls.Add(this.lbUser);
-            this.gbLogin.Location = new System.Drawing.Point(37, 64);
-            this.gbLogin.Name = "gbLogin";
-            this.gbLogin.Size = new System.Drawing.Size(358, 390);
-            this.gbLogin.TabIndex = 6;
-            this.gbLogin.TabStop = false;
-            this.gbLogin.Enter += new System.EventHandler(this.txtUse_TextChanged);
+            this.lbUser.AutoSize = true;
+            this.lbUser.Font = new System.Drawing.Font("Bookman Old Style", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbUser.Location = new System.Drawing.Point(155, 186);
+            this.lbUser.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbUser.Name = "lbUser";
+            this.lbUser.Size = new System.Drawing.Size(72, 19);
+            this.lbUser.TabIndex = 2;
+            this.lbUser.Text = "Usuario";
+            this.lbUser.Click += new System.EventHandler(this.label1_Click);
             // 
             // Login
             // 
@@ -144,11 +144,12 @@
             this.Controls.Add(this.paneBackground);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Login";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.paneBackground.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureProfile)).EndInit();
             this.gbLogin.ResumeLayout(false);
             this.gbLogin.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureProfile)).EndInit();
             this.ResumeLayout(false);
 
         }
