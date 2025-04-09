@@ -35,25 +35,26 @@
             this.txtName = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.txtPrice = new System.Windows.Forms.TextBox();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // lbName
             // 
             this.lbName.AutoSize = true;
-            this.lbName.Location = new System.Drawing.Point(112, 7);
-            this.lbName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbName.Location = new System.Drawing.Point(15, 28);
             this.lbName.Name = "lbName";
-            this.lbName.Size = new System.Drawing.Size(44, 13);
+            this.lbName.Size = new System.Drawing.Size(56, 16);
             this.lbName.TabIndex = 0;
             this.lbName.Text = "Nombre";
             // 
             // lbCantidad
             // 
             this.lbCantidad.AutoSize = true;
-            this.lbCantidad.Location = new System.Drawing.Point(24, 75);
-            this.lbCantidad.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbCantidad.Location = new System.Drawing.Point(10, 90);
             this.lbCantidad.Name = "lbCantidad";
-            this.lbCantidad.Size = new System.Drawing.Size(49, 13);
+            this.lbCantidad.Size = new System.Drawing.Size(61, 16);
             this.lbCantidad.TabIndex = 1;
             this.lbCantidad.Text = "Cantidad";
             this.lbCantidad.Click += new System.EventHandler(this.label2_Click);
@@ -61,62 +62,81 @@
             // lbPrice
             // 
             this.lbPrice.AutoSize = true;
-            this.lbPrice.Location = new System.Drawing.Point(201, 75);
-            this.lbPrice.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbPrice.Location = new System.Drawing.Point(221, 62);
             this.lbPrice.Name = "lbPrice";
-            this.lbPrice.Size = new System.Drawing.Size(37, 13);
+            this.lbPrice.Size = new System.Drawing.Size(46, 16);
             this.lbPrice.TabIndex = 2;
             this.lbPrice.Text = "Precio";
             // 
             // txtUnits
             // 
-            this.txtUnits.Location = new System.Drawing.Point(79, 70);
-            this.txtUnits.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtUnits.Location = new System.Drawing.Point(85, 128);
+            this.txtUnits.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtUnits.Name = "txtUnits";
-            this.txtUnits.Size = new System.Drawing.Size(76, 20);
+            this.txtUnits.Size = new System.Drawing.Size(100, 22);
             this.txtUnits.TabIndex = 3;
             // 
             // txtName
             // 
-            this.txtName.Location = new System.Drawing.Point(102, 30);
-            this.txtName.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtName.Location = new System.Drawing.Point(83, 28);
+            this.txtName.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtName.Name = "txtName";
-            this.txtName.Size = new System.Drawing.Size(76, 20);
+            this.txtName.Size = new System.Drawing.Size(100, 22);
             this.txtName.TabIndex = 5;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(951, 449);
-            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button1.Location = new System.Drawing.Point(1268, 553);
+            this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(56, 19);
+            this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 6;
             this.button1.Text = "cerrar";
             this.button1.UseVisualStyleBackColor = true;
             // 
             // txtPrice
             // 
-            this.txtPrice.Location = new System.Drawing.Point(257, 70);
-            this.txtPrice.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtPrice.Location = new System.Drawing.Point(289, 62);
+            this.txtPrice.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtPrice.Name = "txtPrice";
-            this.txtPrice.Size = new System.Drawing.Size(76, 20);
+            this.txtPrice.Size = new System.Drawing.Size(100, 22);
             this.txtPrice.TabIndex = 7;
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.panel1.Location = new System.Drawing.Point(-8, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1375, 35);
+            this.panel1.TabIndex = 8;
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.NavajoWhite;
+            this.panel2.Controls.Add(this.txtName);
+            this.panel2.Controls.Add(this.txtPrice);
+            this.panel2.Controls.Add(this.lbName);
+            this.panel2.Controls.Add(this.lbCantidad);
+            this.panel2.Controls.Add(this.lbPrice);
+            this.panel2.Location = new System.Drawing.Point(2, 36);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(445, 162);
+            this.panel2.TabIndex = 9;
             // 
             // Venta
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1025, 513);
-            this.Controls.Add(this.txtPrice);
+            this.ClientSize = new System.Drawing.Size(1367, 631);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.txtName);
             this.Controls.Add(this.txtUnits);
-            this.Controls.Add(this.lbPrice);
-            this.Controls.Add(this.lbCantidad);
-            this.Controls.Add(this.lbName);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Controls.Add(this.panel2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Venta";
             this.Text = "Venta";
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -131,5 +151,7 @@
         private System.Windows.Forms.TextBox txtName;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TextBox txtPrice;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panel2;
     }
 }
