@@ -43,3 +43,5 @@ obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache
 .vs/AlexiEconomy.csproj.dtbcache.json
 /.vs
 .vs/AlexiEconomy.csproj.dtbcache.json
+obj/Release/.NETFramework,Version=v4.7.2.AssemblyAttributes.cs
+obj/Release/AlexiEconomy.csproj.AssemblyReference.cache
