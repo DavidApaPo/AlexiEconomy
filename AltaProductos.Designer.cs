@@ -71,7 +71,7 @@
             // 
             this.lbName.AutoSize = true;
             this.lbName.Font = new System.Drawing.Font("Microsoft YaHei UI", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbName.Location = new System.Drawing.Point(101, 10);
+            this.lbName.Location = new System.Drawing.Point(98, 10);
             this.lbName.Name = "lbName";
             this.lbName.Size = new System.Drawing.Size(65, 19);
             this.lbName.TabIndex = 0;
@@ -82,7 +82,7 @@
             // 
             this.lbMili.AutoSize = true;
             this.lbMili.Font = new System.Drawing.Font("Microsoft YaHei UI", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbMili.Location = new System.Drawing.Point(279, 3);
+            this.lbMili.Location = new System.Drawing.Point(271, 10);
             this.lbMili.Name = "lbMili";
             this.lbMili.Size = new System.Drawing.Size(81, 19);
             this.lbMili.TabIndex = 1;
@@ -293,16 +293,6 @@
             this.txtStock.TabIndex = 23;
             this.txtStock.TextChanged += new System.EventHandler(this.txtStock_TextChanged);
             // 
-            // btnSerch
-            // 
-            this.btnSerch.BackgroundImage = global::AlexiEconomy.Properties.Resources.Lupa;
-            this.btnSerch.Location = new System.Drawing.Point(1232, 25);
-            this.btnSerch.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnSerch.Name = "btnSerch";
-            this.btnSerch.Size = new System.Drawing.Size(28, 23);
-            this.btnSerch.TabIndex = 24;
-            this.btnSerch.UseVisualStyleBackColor = true;
-            //
             // lbCategory
             // 
             this.lbCategory.AutoSize = true;
@@ -399,7 +389,6 @@
             this.panel1.Controls.Add(this.btnSerch);
             this.panel1.Controls.Add(this.txtSeach);
             this.panel1.Controls.Add(this.btnBack);
-            this.panel1.Controls.Add(this.lbProducts);
             this.panel1.Location = new System.Drawing.Point(1, 2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1376, 46);
@@ -433,10 +422,9 @@
             this.panel2.BackColor = System.Drawing.SystemColors.Info;
             this.panel2.Controls.Add(this.txtPriceIVA);
             this.panel2.Controls.Add(this.lbCategory);
-            this.panel2.Controls.Add(this.txtName);
-            this.panel2.Controls.Add(this.lbName);
             this.panel2.Controls.Add(this.lbMili);
             this.panel2.Controls.Add(this.txtName);
+            this.panel2.Controls.Add(this.lbName);
             this.panel2.Location = new System.Drawing.Point(4, 48);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1373, 202);
@@ -457,15 +445,12 @@
             this.Controls.Add(this.cbUnit);
             this.Controls.Add(this.cbIVA);
             this.Controls.Add(this.cbMili);
-            this.Controls.Add(this.txtName);
             this.Controls.Add(this.lbPriceBuy);
             this.Controls.Add(this.lbPriceIVA);
             this.Controls.Add(this.lbPrice);
             this.Controls.Add(this.lbUnit);
             this.Controls.Add(this.lbIVA);
             this.Controls.Add(this.lbProducts);
-            this.Controls.Add(this.lbMili);
-            this.Controls.Add(this.lbName);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
