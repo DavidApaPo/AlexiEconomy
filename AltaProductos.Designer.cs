@@ -175,6 +175,7 @@
             this.cbIVA.Name = "cbIVA";
             this.cbIVA.Size = new System.Drawing.Size(121, 24);
             this.cbIVA.TabIndex = 10;
+            this.cbIVA.SelectedIndexChanged += new System.EventHandler(this.cbIVA_SelectedIndexChanged);
             // 
             // cbUnit
             // 

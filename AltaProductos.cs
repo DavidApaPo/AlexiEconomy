@@ -48,6 +48,7 @@ namespace AlexiEconomy
 
         private void txtPrice_TextChanged(object sender, EventArgs e)
         {
+           
             string patron = "^-?[0-9]+(\\.[0-9]+)?$";
             string texto = txtPrice.Text;
 
@@ -58,7 +59,14 @@ namespace AlexiEconomy
                 txtPrice.Text = texto.Remove(texto.Length - 1);
 
                 txtPrice.SelectionStart = txtPrice.Text.Length;
+                 
             }
+
+            ChangePriceIVA();
+
+
+
+
 
         }
 
@@ -115,6 +123,7 @@ namespace AlexiEconomy
 
                 txtPriceIVA.SelectionStart = txtPriceIVA.Text.Length;
             }
+
         }
 
         private void txtStock_TextChanged(object sender, EventArgs e)
@@ -202,7 +211,7 @@ namespace AlexiEconomy
 
             TableProducts.Rows[num].Cells[0].Value= txtName.Text;
             TableProducts.Rows[num].Cells[1].Value = cbMili.Text;
-            TableProducts.Rows[num].Cells[2].Value = txtPrice.Text;
+            TableProducts.Rows[num].Cells[2].Value = txtPriceIVA.Text;
             TableProducts.Rows[num].Cells[3].Value = txtPriceBuy.Text;
             TableProducts.Rows[num].Cells[4].Value = txtStock.Text;
             TableProducts.Rows[num].Cells[5].Value = txtCategory.Text;
@@ -212,6 +221,34 @@ namespace AlexiEconomy
         private void TableProducts_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
         {
 
+        }
+
+        private void cbIVA_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            ChangePriceIVA();
+
+        }
+        
+
+
+
+
+       private void ChangePriceIVA()
+        {
+            float percent = 0;
+            string sizePrice = txtPrice.Text;
+            if (cbIVA.Text == "Si" && sizePrice.Length>0)
+            {
+                percent = float.Parse(txtPrice.Text);
+                percent *= (float)0.16;
+                float price = float.Parse(txtPrice.Text);
+                price = percent + price;
+                txtPriceIVA.Text = price.ToString();
+            }
+            else
+            {
+                txtPriceIVA.Text = txtPrice.Text;
+            }
         }
     }
 }
