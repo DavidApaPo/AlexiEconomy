@@ -181,11 +181,15 @@ namespace AlexiEconomy
                     }
 
         private void dataGridView1_CellContentClick_3(object sender, DataGridViewCellEventArgs e)
+
+        private void btnSerch_Click(object sender, EventArgs e)
         {
 
         }
 
         private void tableProducts_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void panel1_Paint(object sender, PaintEventArgs e)
+
         {
 
         }

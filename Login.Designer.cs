@@ -46,10 +46,10 @@
             this.paneBackground.BackColor = System.Drawing.Color.Transparent;
             this.paneBackground.BackgroundImage = global::AlexiEconomy.Properties.Resources.fondo;
             this.paneBackground.Controls.Add(this.gbLogin);
-            this.paneBackground.Location = new System.Drawing.Point(416, 12);
-            this.paneBackground.Margin = new System.Windows.Forms.Padding(2);
+            this.paneBackground.Location = new System.Drawing.Point(-2, 6);
+            this.paneBackground.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.paneBackground.Name = "paneBackground";
-            this.paneBackground.Size = new System.Drawing.Size(414, 491);
+            this.paneBackground.Size = new System.Drawing.Size(552, 604);
             this.paneBackground.TabIndex = 5;
             this.paneBackground.Paint += new System.Windows.Forms.PaintEventHandler(this.paneBackground_Paint);
             // 
@@ -134,18 +134,85 @@
             this.lbUser.Text = "Usuario";
             this.lbUser.Click += new System.EventHandler(this.label1_Click);
             // 
+            // txtPass
+            // 
+            this.txtPass.AcceptsTab = true;
+            this.txtPass.Location = new System.Drawing.Point(192, 350);
+            this.txtPass.Margin = new System.Windows.Forms.Padding(4);
+            this.txtPass.Name = "txtPass";
+            this.txtPass.PasswordChar = '*';
+            this.txtPass.Size = new System.Drawing.Size(132, 22);
+            this.txtPass.TabIndex = 1;
+            this.txtPass.TextChanged += new System.EventHandler(this.txtPass_TextChanged);
+            // 
+            // txtUser
+            // 
+            this.txtUser.AcceptsTab = true;
+            this.txtUser.Location = new System.Drawing.Point(192, 271);
+            this.txtUser.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtUser.Name = "txtUser";
+            this.txtUser.Size = new System.Drawing.Size(125, 22);
+            this.txtUser.TabIndex = 0;
+            this.txtUser.TextChanged += new System.EventHandler(this.txtUser_TextChanged);
+            // 
+            // btnLogin
+            // 
+            this.btnLogin.BackColor = System.Drawing.Color.Aqua;
+            this.btnLogin.Location = new System.Drawing.Point(165, 420);
+            this.btnLogin.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnLogin.Name = "btnLogin";
+            this.btnLogin.Size = new System.Drawing.Size(160, 54);
+            this.btnLogin.TabIndex = 4;
+            this.btnLogin.Text = "Iniciar Sesion";
+            this.btnLogin.UseVisualStyleBackColor = false;
+            this.btnLogin.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // pictureProfile
+            // 
+            this.pictureProfile.BackColor = System.Drawing.Color.Transparent;
+            this.pictureProfile.BackgroundImage = global::AlexiEconomy.Properties.Resources.login;
+            this.pictureProfile.Location = new System.Drawing.Point(192, 63);
+            this.pictureProfile.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureProfile.Name = "pictureProfile";
+            this.pictureProfile.Size = new System.Drawing.Size(159, 139);
+            this.pictureProfile.TabIndex = 5;
+            this.pictureProfile.TabStop = false;
+            this.pictureProfile.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
+            // lbContraseña
+            // 
+            this.lbContraseña.AutoSize = true;
+            this.lbContraseña.Font = new System.Drawing.Font("Bookman Old Style", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbContraseña.Location = new System.Drawing.Point(189, 311);
+            this.lbContraseña.Name = "lbContraseña";
+            this.lbContraseña.Size = new System.Drawing.Size(128, 24);
+            this.lbContraseña.TabIndex = 2;
+            this.lbContraseña.Text = "Contraseña";
+            // 
+            // lbUser
+            // 
+            this.lbUser.AutoSize = true;
+            this.lbUser.Font = new System.Drawing.Font("Bookman Old Style", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbUser.Location = new System.Drawing.Point(207, 229);
+            this.lbUser.Name = "lbUser";
+            this.lbUser.Size = new System.Drawing.Size(88, 24);
+            this.lbUser.TabIndex = 2;
+            this.lbUser.Text = "Usuario";
+            this.lbUser.Click += new System.EventHandler(this.label1_Click);
+            // 
             // Login
             // 
             this.AcceptButton = this.btnLogin;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(1027, 616);
+            this.ClientSize = new System.Drawing.Size(546, 613);
             this.Controls.Add(this.paneBackground);
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
+            this.Text = "Login";
             this.paneBackground.ResumeLayout(false);
             this.gbLogin.ResumeLayout(false);
             this.gbLogin.PerformLayout();
