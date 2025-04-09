@@ -43,7 +43,7 @@
             // lbName
             // 
             this.lbName.AutoSize = true;
-            this.lbName.Location = new System.Drawing.Point(15, 28);
+            this.lbName.Location = new System.Drawing.Point(13, 28);
             this.lbName.Name = "lbName";
             this.lbName.Size = new System.Drawing.Size(56, 16);
             this.lbName.TabIndex = 0;
@@ -52,7 +52,7 @@
             // lbCantidad
             // 
             this.lbCantidad.AutoSize = true;
-            this.lbCantidad.Location = new System.Drawing.Point(10, 90);
+            this.lbCantidad.Location = new System.Drawing.Point(13, 68);
             this.lbCantidad.Name = "lbCantidad";
             this.lbCantidad.Size = new System.Drawing.Size(61, 16);
             this.lbCantidad.TabIndex = 1;
@@ -62,7 +62,7 @@
             // lbPrice
             // 
             this.lbPrice.AutoSize = true;
-            this.lbPrice.Location = new System.Drawing.Point(221, 62);
+            this.lbPrice.Location = new System.Drawing.Point(226, 62);
             this.lbPrice.Name = "lbPrice";
             this.lbPrice.Size = new System.Drawing.Size(46, 16);
             this.lbPrice.TabIndex = 2;
@@ -116,9 +116,9 @@
             this.panel2.Controls.Add(this.txtName);
             this.panel2.Controls.Add(this.txtPrice);
             this.panel2.Controls.Add(this.lbName);
-            this.panel2.Controls.Add(this.lbCantidad);
             this.panel2.Controls.Add(this.lbPrice);
-            this.panel2.Location = new System.Drawing.Point(2, 36);
+            this.panel2.Controls.Add(this.lbCantidad);
+            this.panel2.Location = new System.Drawing.Point(-8, 62);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(445, 162);
             this.panel2.TabIndex = 9;
@@ -131,10 +131,6 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.txtUnits);
-            this.Controls.Add(this.lbPrice);
-            this.Controls.Add(this.lbCantidad);
-            this.Controls.Add(this.lbName);
-            this.Margin = new System.Windows.Forms.Padding(2);
             this.Controls.Add(this.panel2);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Venta";

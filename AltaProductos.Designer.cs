@@ -58,11 +58,11 @@
             this.dataBuy = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataStock = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataCategory = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            ((System.ComponentModel.ISupportInitialize)(this.TableProducts)).BeginInit();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnSerch = new System.Windows.Forms.Button();
             this.btnBack = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
+            ((System.ComponentModel.ISupportInitialize)(this.TableProducts)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -71,7 +71,7 @@
             // 
             this.lbName.AutoSize = true;
             this.lbName.Font = new System.Drawing.Font("Microsoft YaHei UI", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbName.Location = new System.Drawing.Point(103, 10);
+            this.lbName.Location = new System.Drawing.Point(101, 10);
             this.lbName.Name = "lbName";
             this.lbName.Size = new System.Drawing.Size(65, 19);
             this.lbName.TabIndex = 0;
@@ -82,7 +82,7 @@
             // 
             this.lbMili.AutoSize = true;
             this.lbMili.Font = new System.Drawing.Font("Microsoft YaHei UI", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbMili.Location = new System.Drawing.Point(279, 10);
+            this.lbMili.Location = new System.Drawing.Point(279, 3);
             this.lbMili.Name = "lbMili";
             this.lbMili.Size = new System.Drawing.Size(81, 19);
             this.lbMili.TabIndex = 1;
@@ -142,17 +142,17 @@
             // 
             // lbPriceBuy
             // 
-            this.lbBuy.AutoSize = true;
-            this.lbBuy.Font = new System.Drawing.Font("Microsoft YaHei UI", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbBuy.Location = new System.Drawing.Point(540, 178);
-            this.lbBuy.Name = "lbPriceBuy";
-            this.lbBuy.Size = new System.Drawing.Size(110, 19);
-            this.lbBuy.TabIndex = 7;
-            this.lbBuy.Text = "Precio Compra";
+            this.lbPriceBuy.AutoSize = true;
+            this.lbPriceBuy.Font = new System.Drawing.Font("Microsoft YaHei UI", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbPriceBuy.Location = new System.Drawing.Point(540, 178);
+            this.lbPriceBuy.Name = "lbPriceBuy";
+            this.lbPriceBuy.Size = new System.Drawing.Size(110, 19);
+            this.lbPriceBuy.TabIndex = 7;
+            this.lbPriceBuy.Text = "Precio Compra";
             // 
             // txtName
             // 
-            this.txtName.Location = new System.Drawing.Point(92, 44);
+            this.txtName.Location = new System.Drawing.Point(79, 46);
             this.txtName.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(100, 22);
@@ -261,17 +261,6 @@
             this.lbSearch.TabIndex = 18;
             this.lbSearch.Text = "Buscar";
             this.lbSearch.Click += new System.EventHandler(this.label7_Click);
-            // 
-            // btnBack
-            // 
-            this.btnBack.BackgroundImage = global::AlexiEconomy.Properties.Resources.atra;
-            this.btnBack.Location = new System.Drawing.Point(12, 9);
-            this.btnBack.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnBack.Name = "btnBack";
-            this.btnBack.Size = new System.Drawing.Size(53, 54);
-            this.btnBack.TabIndex = 15;
-            this.btnBack.UseVisualStyleBackColor = true;
-            this.btnBack.Click += new System.EventHandler(this.button1_Click);
             // 
             // btnDelete
             // 
@@ -402,6 +391,7 @@
             this.dataCategory.Name = "dataCategory";
             this.dataCategory.ReadOnly = true;
             this.dataCategory.Width = 125;
+            // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ActiveCaption;
@@ -443,6 +433,7 @@
             this.panel2.BackColor = System.Drawing.SystemColors.Info;
             this.panel2.Controls.Add(this.txtPriceIVA);
             this.panel2.Controls.Add(this.lbCategory);
+            this.panel2.Controls.Add(this.txtName);
             this.panel2.Controls.Add(this.lbName);
             this.panel2.Controls.Add(this.lbMili);
             this.panel2.Controls.Add(this.txtName);
@@ -455,7 +446,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1469, 606);
+            this.ClientSize = new System.Drawing.Size(1469, 1055);
             this.Controls.Add(this.txtCategory);
             this.Controls.Add(this.txtStock);
             this.Controls.Add(this.lbStock);
@@ -466,7 +457,6 @@
             this.Controls.Add(this.cbUnit);
             this.Controls.Add(this.cbIVA);
             this.Controls.Add(this.cbMili);
-
             this.Controls.Add(this.txtName);
             this.Controls.Add(this.lbPriceBuy);
             this.Controls.Add(this.lbPriceIVA);

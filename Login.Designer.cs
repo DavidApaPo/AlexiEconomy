@@ -71,73 +71,7 @@
             // txtPass
             // 
             this.txtPass.AcceptsTab = true;
-            this.txtPass.Location = new System.Drawing.Point(144, 284);
-            this.txtPass.Name = "txtPass";
-            this.txtPass.PasswordChar = '*';
-            this.txtPass.Size = new System.Drawing.Size(100, 20);
-            this.txtPass.TabIndex = 1;
-            this.txtPass.TextChanged += new System.EventHandler(this.txtPass_TextChanged);
-            // 
-            // txtUser
-            // 
-            this.txtUser.AcceptsTab = true;
-            this.txtUser.Location = new System.Drawing.Point(144, 220);
-            this.txtUser.Margin = new System.Windows.Forms.Padding(2);
-            this.txtUser.Name = "txtUser";
-            this.txtUser.Size = new System.Drawing.Size(95, 20);
-            this.txtUser.TabIndex = 0;
-            this.txtUser.TextChanged += new System.EventHandler(this.txtUser_TextChanged);
-            // 
-            // btnLogin
-            // 
-            this.btnLogin.BackColor = System.Drawing.Color.Aqua;
-            this.btnLogin.Location = new System.Drawing.Point(124, 341);
-            this.btnLogin.Margin = new System.Windows.Forms.Padding(2);
-            this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(120, 44);
-            this.btnLogin.TabIndex = 4;
-            this.btnLogin.Text = "Iniciar Sesion";
-            this.btnLogin.UseVisualStyleBackColor = false;
-            this.btnLogin.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // pictureProfile
-            // 
-            this.pictureProfile.BackColor = System.Drawing.Color.Transparent;
-            this.pictureProfile.BackgroundImage = global::AlexiEconomy.Properties.Resources.login;
-            this.pictureProfile.Location = new System.Drawing.Point(102, 19);
-            this.pictureProfile.Name = "pictureProfile";
-            this.pictureProfile.Size = new System.Drawing.Size(151, 144);
-            this.pictureProfile.TabIndex = 5;
-            this.pictureProfile.TabStop = false;
-            this.pictureProfile.Click += new System.EventHandler(this.pictureBox1_Click);
-            // 
-            // lbContraseña
-            // 
-            this.lbContraseña.AutoSize = true;
-            this.lbContraseña.Font = new System.Drawing.Font("Bookman Old Style", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbContraseña.Location = new System.Drawing.Point(142, 253);
-            this.lbContraseña.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lbContraseña.Name = "lbContraseña";
-            this.lbContraseña.Size = new System.Drawing.Size(102, 19);
-            this.lbContraseña.TabIndex = 2;
-            this.lbContraseña.Text = "Contraseña";
-            // 
-            // lbUser
-            // 
-            this.lbUser.AutoSize = true;
-            this.lbUser.Font = new System.Drawing.Font("Bookman Old Style", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbUser.Location = new System.Drawing.Point(155, 186);
-            this.lbUser.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lbUser.Name = "lbUser";
-            this.lbUser.Size = new System.Drawing.Size(72, 19);
-            this.lbUser.TabIndex = 2;
-            this.lbUser.Text = "Usuario";
-            this.lbUser.Click += new System.EventHandler(this.label1_Click);
-            // 
-            // txtPass
-            // 
-            this.txtPass.AcceptsTab = true;
-            this.txtPass.Location = new System.Drawing.Point(192, 350);
+            this.txtPass.Location = new System.Drawing.Point(90, 348);
             this.txtPass.Margin = new System.Windows.Forms.Padding(4);
             this.txtPass.Name = "txtPass";
             this.txtPass.PasswordChar = '*';
@@ -148,7 +82,7 @@
             // txtUser
             // 
             this.txtUser.AcceptsTab = true;
-            this.txtUser.Location = new System.Drawing.Point(192, 271);
+            this.txtUser.Location = new System.Drawing.Point(90, 256);
             this.txtUser.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtUser.Name = "txtUser";
             this.txtUser.Size = new System.Drawing.Size(125, 22);
@@ -171,7 +105,7 @@
             // 
             this.pictureProfile.BackColor = System.Drawing.Color.Transparent;
             this.pictureProfile.BackgroundImage = global::AlexiEconomy.Properties.Resources.login;
-            this.pictureProfile.Location = new System.Drawing.Point(192, 63);
+            this.pictureProfile.Location = new System.Drawing.Point(90, 47);
             this.pictureProfile.Margin = new System.Windows.Forms.Padding(4);
             this.pictureProfile.Name = "pictureProfile";
             this.pictureProfile.Size = new System.Drawing.Size(159, 139);
@@ -183,7 +117,8 @@
             // 
             this.lbContraseña.AutoSize = true;
             this.lbContraseña.Font = new System.Drawing.Font("Bookman Old Style", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbContraseña.Location = new System.Drawing.Point(189, 311);
+            this.lbContraseña.Location = new System.Drawing.Point(97, 304);
+            this.lbContraseña.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbContraseña.Name = "lbContraseña";
             this.lbContraseña.Size = new System.Drawing.Size(128, 24);
             this.lbContraseña.TabIndex = 2;
@@ -193,7 +128,8 @@
             // 
             this.lbUser.AutoSize = true;
             this.lbUser.Font = new System.Drawing.Font("Bookman Old Style", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbUser.Location = new System.Drawing.Point(207, 229);
+            this.lbUser.Location = new System.Drawing.Point(108, 215);
+            this.lbUser.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbUser.Name = "lbUser";
             this.lbUser.Size = new System.Drawing.Size(88, 24);
             this.lbUser.TabIndex = 2;
@@ -211,7 +147,6 @@
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form1";
             this.Text = "Login";
             this.paneBackground.ResumeLayout(false);
             this.gbLogin.ResumeLayout(false);

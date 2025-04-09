@@ -39,7 +39,6 @@
             this.btnInventory = new System.Windows.Forms.Button();
             this.btnSales = new System.Windows.Forms.Button();
             this.btnProducts = new System.Windows.Forms.Button();
-            this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).BeginInit();
             this.SuspendLayout();
             // 
@@ -56,131 +55,6 @@
             this.lbMenu.Text = "Menu";
             this.lbMenu.Click += new System.EventHandler(this.label1_Click);
             // 
-            // btnSales
-            // 
-            this.btnSales.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
-            this.btnSales.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.btnSales.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btnSales.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnSales.Font = new System.Drawing.Font("Microsoft New Tai Lue", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSales.Image = global::AlexiEconomy.Properties.Resources.ventas_imag;
-            this.btnSales.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnSales.Location = new System.Drawing.Point(389, 81);
-            this.btnSales.Margin = new System.Windows.Forms.Padding(2);
-            this.btnSales.Name = "btnSales";
-            this.btnSales.Size = new System.Drawing.Size(144, 100);
-            this.btnSales.TabIndex = 2;
-            this.btnSales.Text = "Ventas";
-            this.btnSales.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnSales.UseVisualStyleBackColor = false;
-            this.btnSales.Click += new System.EventHandler(this.btnSales_Click);
-            // 
-            // btnInventory
-            // 
-            this.btnInventory.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.btnInventory.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnInventory.Font = new System.Drawing.Font("Microsoft New Tai Lue", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnInventory.Image = global::AlexiEconomy.Properties.Resources.inventario_imag;
-            this.btnInventory.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnInventory.Location = new System.Drawing.Point(583, 81);
-            this.btnInventory.Margin = new System.Windows.Forms.Padding(2);
-            this.btnInventory.Name = "btnInventory";
-            this.btnInventory.Size = new System.Drawing.Size(144, 107);
-            this.btnInventory.TabIndex = 3;
-            this.btnInventory.Text = "Inventario";
-            this.btnInventory.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnInventory.UseVisualStyleBackColor = false;
-            // 
-            // btnSuppliers
-            // 
-            this.btnSuppliers.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.btnSuppliers.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnSuppliers.Font = new System.Drawing.Font("Microsoft New Tai Lue", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSuppliers.Image = global::AlexiEconomy.Properties.Resources.probedores_imag;
-            this.btnSuppliers.Location = new System.Drawing.Point(801, 81);
-            this.btnSuppliers.Margin = new System.Windows.Forms.Padding(2);
-            this.btnSuppliers.Name = "btnSuppliers";
-            this.btnSuppliers.Size = new System.Drawing.Size(144, 100);
-            this.btnSuppliers.TabIndex = 4;
-            this.btnSuppliers.Text = "Proveedores";
-            this.btnSuppliers.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnSuppliers.UseVisualStyleBackColor = false;
-            // 
-            // btnCustomers
-            // 
-            this.btnCustomers.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.btnCustomers.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnCustomers.Font = new System.Drawing.Font("Microsoft New Tai Lue", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCustomers.Image = global::AlexiEconomy.Properties.Resources.clientes_imag;
-            this.btnCustomers.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnCustomers.Location = new System.Drawing.Point(302, 222);
-            this.btnCustomers.Margin = new System.Windows.Forms.Padding(2);
-            this.btnCustomers.Name = "btnCustomers";
-            this.btnCustomers.Size = new System.Drawing.Size(144, 100);
-            this.btnCustomers.TabIndex = 5;
-            this.btnCustomers.Text = "Clientes";
-            this.btnCustomers.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnCustomers.UseVisualStyleBackColor = false;
-            // 
-            // btnWare
-            // 
-            this.btnWare.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.btnWare.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnWare.Font = new System.Drawing.Font("Microsoft New Tai Lue", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnWare.Image = global::AlexiEconomy.Properties.Resources.bodega_imag;
-            this.btnWare.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnWare.Location = new System.Drawing.Point(492, 222);
-            this.btnWare.Margin = new System.Windows.Forms.Padding(2);
-            this.btnWare.Name = "btnWare";
-            this.btnWare.Size = new System.Drawing.Size(144, 100);
-            this.btnWare.TabIndex = 6;
-            this.btnWare.Text = "Bodegas";
-            this.btnWare.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnWare.UseVisualStyleBackColor = false;
-            // 
-            // btnEmployes
-            // 
-            this.btnEmployes.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.btnEmployes.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnEmployes.Font = new System.Drawing.Font("Microsoft New Tai Lue", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEmployes.Image = global::AlexiEconomy.Properties.Resources.empleados_imag;
-            this.btnEmployes.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnEmployes.Location = new System.Drawing.Point(704, 222);
-            this.btnEmployes.Margin = new System.Windows.Forms.Padding(2);
-            this.btnEmployes.Name = "btnEmployes";
-            this.btnEmployes.Size = new System.Drawing.Size(144, 100);
-            this.btnEmployes.TabIndex = 7;
-            this.btnEmployes.Text = "Empleados";
-            this.btnEmployes.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnEmployes.UseVisualStyleBackColor = false;
-            // 
-            // btnProducts
-            // 
-            this.btnProducts.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.btnProducts.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnProducts.Font = new System.Drawing.Font("Microsoft New Tai Lue", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnProducts.Image = global::AlexiEconomy.Properties.Resources.producto_imag;
-            this.btnProducts.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnProducts.Location = new System.Drawing.Point(174, 81);
-            this.btnProducts.Margin = new System.Windows.Forms.Padding(2);
-            this.btnProducts.Name = "btnProducts";
-            this.btnProducts.Size = new System.Drawing.Size(144, 100);
-            this.btnProducts.TabIndex = 1;
-            this.btnProducts.Text = "Productos";
-            this.btnProducts.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnProducts.UseVisualStyleBackColor = false;
-            this.btnProducts.Click += new System.EventHandler(this.txtProducts_Click);
-            // 
-            // pbLogo
-            // 
-            this.pbLogo.BackgroundImage = global::AlexiEconomy.Properties.Resources.Logo;
-            this.pbLogo.Location = new System.Drawing.Point(520, 439);
-            this.pbLogo.Margin = new System.Windows.Forms.Padding(2);
-            this.pbLogo.Name = "pbLogo";
-            this.pbLogo.Size = new System.Drawing.Size(267, 227);
-            this.pbLogo.TabIndex = 8;
-            this.pbLogo.TabStop = false;
-            // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.LightSalmon;
@@ -194,7 +68,6 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.LightBlue;
-            this.panel2.Controls.Add(this.lbMenu);
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1331, 55);
@@ -203,7 +76,7 @@
             // pbLogo
             // 
             this.pbLogo.BackgroundImage = global::AlexiEconomy.Properties.Resources.Logo;
-            this.pbLogo.Location = new System.Drawing.Point(959, 250);
+            this.pbLogo.Location = new System.Drawing.Point(410, 415);
             this.pbLogo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pbLogo.Name = "pbLogo";
             this.pbLogo.Size = new System.Drawing.Size(336, 268);
@@ -330,7 +203,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Cornsilk;
-            this.ClientSize = new System.Drawing.Size(1327, 602);
+            this.ClientSize = new System.Drawing.Size(1327, 704);
             this.Controls.Add(this.pbLogo);
             this.Controls.Add(this.btnEmployes);
             this.Controls.Add(this.btnWare);
@@ -340,7 +213,6 @@
             this.Controls.Add(this.btnSales);
             this.Controls.Add(this.btnProducts);
             this.Controls.Add(this.lbMenu);
-            this.Margin = new System.Windows.Forms.Padding(2);
             this.Controls.Add(this.panel2);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Menu";
@@ -348,10 +220,9 @@
             this.Text = "Menu";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Menu_Load);
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
