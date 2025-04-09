@@ -143,7 +143,7 @@
             // 
             // txtName
             // 
-            this.txtName.Location = new System.Drawing.Point(83, 92);
+            this.txtName.Location = new System.Drawing.Point(92, 44);
             this.txtName.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(100, 22);
@@ -345,6 +345,7 @@
             this.panel2.Controls.Add(this.lbCategory);
             this.panel2.Controls.Add(this.lbName);
             this.panel2.Controls.Add(this.lbMili);
+            this.panel2.Controls.Add(this.txtName);
             this.panel2.Location = new System.Drawing.Point(4, 48);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1373, 202);
@@ -365,7 +366,6 @@
             this.Controls.Add(this.cbUnit);
             this.Controls.Add(this.cbIVA);
             this.Controls.Add(this.cbMili);
-            this.Controls.Add(this.txtName);
             this.Controls.Add(this.lbBuy);
             this.Controls.Add(this.lbPriceIVA);
             this.Controls.Add(this.lbPrice);
