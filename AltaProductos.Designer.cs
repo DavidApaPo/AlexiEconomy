@@ -52,9 +52,9 @@
             this.lbCategory = new System.Windows.Forms.Label();
             this.txtCategory = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
             this.btnSerch = new System.Windows.Forms.Button();
             this.btnBack = new System.Windows.Forms.Button();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -286,7 +286,7 @@
             // 
             this.lbCategory.AutoSize = true;
             this.lbCategory.Font = new System.Drawing.Font("Microsoft YaHei UI", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbCategory.Location = new System.Drawing.Point(891, 167);
+            this.lbCategory.Location = new System.Drawing.Point(883, 120);
             this.lbCategory.Name = "lbCategory";
             this.lbCategory.Size = new System.Drawing.Size(75, 19);
             this.lbCategory.TabIndex = 25;
@@ -316,17 +316,6 @@
             this.panel1.TabIndex = 27;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.SystemColors.Info;
-            this.panel2.Controls.Add(this.txtPriceIVA);
-            this.panel2.Controls.Add(this.lbName);
-            this.panel2.Controls.Add(this.lbMili);
-            this.panel2.Location = new System.Drawing.Point(4, 48);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1373, 202);
-            this.panel2.TabIndex = 28;
-            // 
             // btnSerch
             // 
             this.btnSerch.BackgroundImage = global::AlexiEconomy.Properties.Resources.Lupa;
@@ -349,13 +338,24 @@
             this.btnBack.UseVisualStyleBackColor = true;
             this.btnBack.Click += new System.EventHandler(this.button1_Click);
             // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.SystemColors.Info;
+            this.panel2.Controls.Add(this.txtPriceIVA);
+            this.panel2.Controls.Add(this.lbCategory);
+            this.panel2.Controls.Add(this.lbName);
+            this.panel2.Controls.Add(this.lbMili);
+            this.panel2.Location = new System.Drawing.Point(4, 48);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(1373, 202);
+            this.panel2.TabIndex = 28;
+            // 
             // AltaProductos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1469, 606);
             this.Controls.Add(this.txtCategory);
-            this.Controls.Add(this.lbCategory);
             this.Controls.Add(this.txtStock);
             this.Controls.Add(this.lbStock);
             this.Controls.Add(this.btnDelete);
