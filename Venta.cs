@@ -26,5 +26,22 @@ namespace AlexiEconomy
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnSell_Click(object sender, EventArgs e)
+        {
+            gbSell.Visible = true;
+        }
+
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+            Menu _menu = new Menu();
+            _menu.Show();
+            this.Hide();
+        }
     }
 }

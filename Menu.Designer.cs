@@ -238,7 +238,7 @@
         private System.Windows.Forms.Button btnProducts;
         private System.Windows.Forms.PictureBox pbLogo;
         private System.Windows.Forms.Button txtProducts;
-        private System.Windows.Forms.Button txtaSales;
+        private System.Windows.Forms.Button txtSales;
         private System.Windows.Forms.Button txtInventory;
         private System.Windows.Forms.Button txtSuppliers;
         private System.Windows.Forms.Button txtCustomers;

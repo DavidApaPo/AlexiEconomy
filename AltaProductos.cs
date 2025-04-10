@@ -18,12 +18,6 @@ namespace AlexiEconomy
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            Menu _menu= new Menu();
-            _menu.Show();
-            this.Hide();
-        }
 
         private void txtName_TextChanged(object sender, EventArgs e)
         {
@@ -75,17 +69,7 @@ namespace AlexiEconomy
 
         }
 
-        private void button1_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnSearch_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
         {
 
         }
@@ -141,61 +125,9 @@ namespace AlexiEconomy
             }
         }
 
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
-        private void dataGridView1_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
-        private void label7_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label9_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label10_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox1_TextChanged_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void dataGridView1_CellContentClick_2(object sender, DataGridViewCellEventArgs e)
-        {
-                    }
-
-        private void dataGridView1_CellContentClick_3(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
+       
 
         private void btnSerch_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void tableProducts_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-        private void panel1_Paint(object sender, PaintEventArgs e)
-
         {
 
         }
@@ -212,7 +144,7 @@ namespace AlexiEconomy
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
-
+          TableProducts.Rows.RemoveAt (TableProducts.CurrentCell.RowIndex); 
         }
 
         private void btnSave_Click(object sender, EventArgs e)
@@ -228,10 +160,6 @@ namespace AlexiEconomy
 
         }
 
-        private void TableProducts_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
 
         private void cbIVA_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -259,6 +187,24 @@ namespace AlexiEconomy
             {
                 txtPriceIVA.Text = txtPrice.Text;
             }
+        }
+
+        private void TableProducts_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            
+        }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            Menu _menu = new Menu();
+            _menu.Show();
+            this.Hide();
+
+        }
+
+        private void paneTitle_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }
