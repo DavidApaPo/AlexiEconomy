@@ -32,6 +32,8 @@
             this.label2 = new System.Windows.Forms.Label();
             this.txtUsuario = new System.Windows.Forms.TextBox();
             this.txtContraseña = new System.Windows.Forms.TextBox();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.das = new System.Windows.Forms.Panel();
             this.SuspendLayout();
             // 
             // label1
@@ -69,11 +71,31 @@
             this.txtContraseña.Size = new System.Drawing.Size(100, 22);
             this.txtContraseña.TabIndex = 3;
             // 
+            // groupBox1
+            // 
+            this.groupBox1.Location = new System.Drawing.Point(571, 154);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(200, 100);
+            this.groupBox1.TabIndex = 4;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "groupBox1";
+            // 
+            // das
+            // 
+            this.das.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.das.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.das.Location = new System.Drawing.Point(528, 325);
+            this.das.Name = "das";
+            this.das.Size = new System.Drawing.Size(200, 100);
+            this.das.TabIndex = 5;
+            // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.das);
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.txtContraseña);
             this.Controls.Add(this.txtUsuario);
             this.Controls.Add(this.label2);
@@ -91,6 +113,8 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtUsuario;
         private System.Windows.Forms.TextBox txtContraseña;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Panel das;
     }
 }
 
