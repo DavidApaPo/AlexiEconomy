@@ -13,6 +13,8 @@ namespace AlexiEconomy
 {
     public partial class Venta : Form
     {
+       
+        
         public Venta()
         {
             InitializeComponent();
@@ -37,6 +39,8 @@ namespace AlexiEconomy
         private void btnSell_Click(object sender, EventArgs e)
         {
             gbSell.Visible = true;
+            txtReceive.Text = "1000";
+            txtChange.Text=txtReceive.Text; 
         }
 
         private void btnClose_Click(object sender, EventArgs e)
@@ -108,6 +112,8 @@ namespace AlexiEconomy
                 gbSell.Visible = true;
                 txtReceive.Focus(); 
                 return true; // Indica que hemos manejado la tecla
+                txtReceive.Text = "1000";
+                txtChange.Text = txtReceive.Text;
             }
             return base.ProcessCmdKey(ref msg, keyData); // Llama a la implementación base para otras teclas
         }
@@ -121,6 +127,7 @@ namespace AlexiEconomy
         {
             string patron = "^-?[0-9]+(\\.[0-9]+)?$";
             string texto = txtReceive.Text;
+          
 
             if (!Regex.IsMatch(texto, patron) && texto != "")
             {
@@ -130,8 +137,18 @@ namespace AlexiEconomy
 
                 txtReceive.SelectionStart = txtReceive.Text.Length;
 
+                 
             }
-            txtChange.Text=txtReceive.Text;
+
+            if (txtReceive.Text.Length > 0)
+            {
+                float receive = float.Parse(txtReceive.Text);
+                float change = float.Parse(txtChange.Text);
+                change = receive - change;
+                txtChange.Text = change.ToString();
+
+            }
         }
+       
     }
 }
