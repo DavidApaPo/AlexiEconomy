@@ -53,6 +53,8 @@
             this.dataStock = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataCategory = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.paneTitle = new System.Windows.Forms.Panel();
+            this.btnSearch = new System.Windows.Forms.Button();
+            this.lbSearch = new System.Windows.Forms.Label();
             this.btnSerch = new System.Windows.Forms.Button();
             this.btnBack = new System.Windows.Forms.Button();
             this.paneData = new System.Windows.Forms.Panel();
@@ -61,8 +63,6 @@
             this.lbMili = new System.Windows.Forms.Label();
             this.txtName = new System.Windows.Forms.TextBox();
             this.lbName = new System.Windows.Forms.Label();
-            this.lbSearch = new System.Windows.Forms.Label();
-            this.btnSearch = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.TableProducts)).BeginInit();
             this.paneTitle.SuspendLayout();
             this.paneData.SuspendLayout();
@@ -336,6 +336,24 @@
             this.paneTitle.TabIndex = 27;
             this.paneTitle.Paint += new System.Windows.Forms.PaintEventHandler(this.paneTitle_Paint);
             // 
+            // btnSearch
+            // 
+            this.btnSearch.Location = new System.Drawing.Point(1564, 14);
+            this.btnSearch.Name = "btnSearch";
+            this.btnSearch.Size = new System.Drawing.Size(75, 23);
+            this.btnSearch.TabIndex = 26;
+            this.btnSearch.Text = "boton de buscar";
+            this.btnSearch.UseVisualStyleBackColor = true;
+            // 
+            // lbSearch
+            // 
+            this.lbSearch.AutoSize = true;
+            this.lbSearch.Location = new System.Drawing.Point(1270, 21);
+            this.lbSearch.Name = "lbSearch";
+            this.lbSearch.Size = new System.Drawing.Size(49, 16);
+            this.lbSearch.TabIndex = 25;
+            this.lbSearch.Text = "Buscar";
+            // 
             // btnSerch
             // 
             this.btnSerch.BackgroundImage = global::AlexiEconomy.Properties.Resources.Lupa;
@@ -434,24 +452,6 @@
             this.lbName.TabIndex = 0;
             this.lbName.Text = "Nombre";
             this.lbName.Click += new System.EventHandler(this.lbName_Click);
-            // 
-            // lbSearch
-            // 
-            this.lbSearch.AutoSize = true;
-            this.lbSearch.Location = new System.Drawing.Point(1264, 23);
-            this.lbSearch.Name = "lbSearch";
-            this.lbSearch.Size = new System.Drawing.Size(49, 16);
-            this.lbSearch.TabIndex = 25;
-            this.lbSearch.Text = "Buscar";
-            // 
-            // btnSearch
-            // 
-            this.btnSearch.Location = new System.Drawing.Point(1564, 14);
-            this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(75, 23);
-            this.btnSearch.TabIndex = 26;
-            this.btnSearch.Text = "boton de buscar";
-            this.btnSearch.UseVisualStyleBackColor = true;
             // 
             // AltaProductos
             // 
