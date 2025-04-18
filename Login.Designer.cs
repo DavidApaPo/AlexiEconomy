@@ -28,11 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.btnLogin = new System.Windows.Forms.Button();
             this.paneBackground = new System.Windows.Forms.Panel();
             this.gbLogin = new System.Windows.Forms.GroupBox();
             this.txtPass = new System.Windows.Forms.TextBox();
             this.txtUser = new System.Windows.Forms.TextBox();
-            this.btnLogin = new System.Windows.Forms.Button();
             this.pictureProfile = new System.Windows.Forms.PictureBox();
             this.lbContraseña = new System.Windows.Forms.Label();
             this.lbUser = new System.Windows.Forms.Label();
@@ -40,6 +40,18 @@
             this.gbLogin.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureProfile)).BeginInit();
             this.SuspendLayout();
+            // 
+            // btnLogin
+            // 
+            this.btnLogin.BackColor = System.Drawing.Color.Aqua;
+            this.btnLogin.Location = new System.Drawing.Point(165, 420);
+            this.btnLogin.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnLogin.Name = "btnLogin";
+            this.btnLogin.Size = new System.Drawing.Size(160, 54);
+            this.btnLogin.TabIndex = 4;
+            this.btnLogin.Text = "Iniciar Sesion";
+            this.btnLogin.UseVisualStyleBackColor = false;
+            this.btnLogin.Click += new System.EventHandler(this.button1_Click);
             // 
             // paneBackground
             // 
@@ -49,7 +61,7 @@
             this.paneBackground.Location = new System.Drawing.Point(-2, 6);
             this.paneBackground.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.paneBackground.Name = "paneBackground";
-            this.paneBackground.Size = new System.Drawing.Size(552, 604);
+            this.paneBackground.Size = new System.Drawing.Size(517, 604);
             this.paneBackground.TabIndex = 5;
             this.paneBackground.Paint += new System.Windows.Forms.PaintEventHandler(this.paneBackground_Paint);
             // 
@@ -88,18 +100,6 @@
             this.txtUser.Size = new System.Drawing.Size(125, 22);
             this.txtUser.TabIndex = 0;
             this.txtUser.TextChanged += new System.EventHandler(this.txtUser_TextChanged);
-            // 
-            // btnLogin
-            // 
-            this.btnLogin.BackColor = System.Drawing.Color.Aqua;
-            this.btnLogin.Location = new System.Drawing.Point(165, 420);
-            this.btnLogin.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(160, 54);
-            this.btnLogin.TabIndex = 4;
-            this.btnLogin.Text = "Iniciar Sesion";
-            this.btnLogin.UseVisualStyleBackColor = false;
-            this.btnLogin.Click += new System.EventHandler(this.button1_Click);
             // 
             // pictureProfile
             // 

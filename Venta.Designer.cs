@@ -118,7 +118,7 @@
             this.panel2.Controls.Add(this.lbName);
             this.panel2.Controls.Add(this.lbPrice);
             this.panel2.Controls.Add(this.lbCantidad);
-            this.panel2.Location = new System.Drawing.Point(-8, 62);
+            this.panel2.Location = new System.Drawing.Point(2, 37);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(445, 162);
             this.panel2.TabIndex = 9;

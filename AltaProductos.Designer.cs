@@ -28,28 +28,22 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.lbName = new System.Windows.Forms.Label();
-            this.lbMili = new System.Windows.Forms.Label();
             this.lbProducts = new System.Windows.Forms.Label();
             this.lbIVA = new System.Windows.Forms.Label();
             this.lbUnit = new System.Windows.Forms.Label();
             this.lbPrice = new System.Windows.Forms.Label();
             this.lbPriceIVA = new System.Windows.Forms.Label();
             this.lbPriceBuy = new System.Windows.Forms.Label();
-            this.txtName = new System.Windows.Forms.TextBox();
             this.cbMili = new System.Windows.Forms.ComboBox();
             this.cbIVA = new System.Windows.Forms.ComboBox();
             this.cbUnit = new System.Windows.Forms.ComboBox();
             this.txtPrice = new System.Windows.Forms.TextBox();
-            this.txtPriceIVA = new System.Windows.Forms.TextBox();
             this.txtPriceBuy = new System.Windows.Forms.TextBox();
             this.btnSave = new System.Windows.Forms.Button();
             this.txtSeach = new System.Windows.Forms.TextBox();
-            this.lbSearch = new System.Windows.Forms.Label();
             this.btnDelete = new System.Windows.Forms.Button();
             this.lbStock = new System.Windows.Forms.Label();
             this.txtStock = new System.Windows.Forms.TextBox();
-            this.lbCategory = new System.Windows.Forms.Label();
             this.txtCategory = new System.Windows.Forms.TextBox();
             this.TableProducts = new System.Windows.Forms.DataGridView();
             this.dataName = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -61,38 +55,22 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnSerch = new System.Windows.Forms.Button();
             this.btnBack = new System.Windows.Forms.Button();
+            this.lbName = new System.Windows.Forms.Label();
+            this.txtName = new System.Windows.Forms.TextBox();
+            this.lbMili = new System.Windows.Forms.Label();
+            this.lbCategory = new System.Windows.Forms.Label();
+            this.txtPriceIVA = new System.Windows.Forms.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.TableProducts)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
-            // lbName
-            // 
-            this.lbName.AutoSize = true;
-            this.lbName.Font = new System.Drawing.Font("Microsoft YaHei UI", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbName.Location = new System.Drawing.Point(98, 10);
-            this.lbName.Name = "lbName";
-            this.lbName.Size = new System.Drawing.Size(65, 19);
-            this.lbName.TabIndex = 0;
-            this.lbName.Text = "Nombre";
-            this.lbName.Click += new System.EventHandler(this.lbName_Click);
-            // 
-            // lbMili
-            // 
-            this.lbMili.AutoSize = true;
-            this.lbMili.Font = new System.Drawing.Font("Microsoft YaHei UI", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbMili.Location = new System.Drawing.Point(271, 10);
-            this.lbMili.Name = "lbMili";
-            this.lbMili.Size = new System.Drawing.Size(81, 19);
-            this.lbMili.TabIndex = 1;
-            this.lbMili.Text = "Milimetros";
-            // 
             // lbProducts
             // 
             this.lbProducts.AutoSize = true;
             this.lbProducts.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbProducts.Location = new System.Drawing.Point(611, 9);
+            this.lbProducts.Location = new System.Drawing.Point(616, 7);
             this.lbProducts.Name = "lbProducts";
             this.lbProducts.Size = new System.Drawing.Size(107, 26);
             this.lbProducts.TabIndex = 2;
@@ -124,7 +102,7 @@
             // 
             this.lbPrice.AutoSize = true;
             this.lbPrice.Font = new System.Drawing.Font("Microsoft YaHei UI", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbPrice.Location = new System.Drawing.Point(92, 178);
+            this.lbPrice.Location = new System.Drawing.Point(98, 130);
             this.lbPrice.Name = "lbPrice";
             this.lbPrice.Size = new System.Drawing.Size(52, 19);
             this.lbPrice.TabIndex = 5;
@@ -134,7 +112,7 @@
             // 
             this.lbPriceIVA.AutoSize = true;
             this.lbPriceIVA.Font = new System.Drawing.Font("Microsoft YaHei UI", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbPriceIVA.Location = new System.Drawing.Point(277, 188);
+            this.lbPriceIVA.Location = new System.Drawing.Point(226, 130);
             this.lbPriceIVA.Name = "lbPriceIVA";
             this.lbPriceIVA.Size = new System.Drawing.Size(79, 19);
             this.lbPriceIVA.TabIndex = 6;
@@ -149,15 +127,6 @@
             this.lbPriceBuy.Size = new System.Drawing.Size(110, 19);
             this.lbPriceBuy.TabIndex = 7;
             this.lbPriceBuy.Text = "Precio Compra";
-            // 
-            // txtName
-            // 
-            this.txtName.Location = new System.Drawing.Point(79, 46);
-            this.txtName.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txtName.Name = "txtName";
-            this.txtName.Size = new System.Drawing.Size(100, 22);
-            this.txtName.TabIndex = 8;
-            this.txtName.TextChanged += new System.EventHandler(this.txtName_TextChanged);
             // 
             // cbMili
             // 
@@ -206,21 +175,12 @@
             // 
             // txtPrice
             // 
-            this.txtPrice.Location = new System.Drawing.Point(83, 217);
+            this.txtPrice.Location = new System.Drawing.Point(79, 159);
             this.txtPrice.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtPrice.Name = "txtPrice";
-            this.txtPrice.Size = new System.Drawing.Size(100, 22);
+            this.txtPrice.Size = new System.Drawing.Size(84, 22);
             this.txtPrice.TabIndex = 12;
             this.txtPrice.TextChanged += new System.EventHandler(this.txtPrice_TextChanged);
-            // 
-            // txtPriceIVA
-            // 
-            this.txtPriceIVA.Location = new System.Drawing.Point(260, 169);
-            this.txtPriceIVA.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txtPriceIVA.Name = "txtPriceIVA";
-            this.txtPriceIVA.Size = new System.Drawing.Size(100, 22);
-            this.txtPriceIVA.TabIndex = 13;
-            this.txtPriceIVA.TextChanged += new System.EventHandler(this.txtPriceIVA_TextChanged);
             // 
             // txtPriceBuy
             // 
@@ -233,41 +193,33 @@
             // 
             // btnSave
             // 
-            this.btnSave.Location = new System.Drawing.Point(1232, 575);
+            this.btnSave.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnSave.Location = new System.Drawing.Point(1232, 562);
             this.btnSave.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(99, 23);
+            this.btnSave.Size = new System.Drawing.Size(99, 36);
             this.btnSave.TabIndex = 16;
             this.btnSave.Text = "Guardar";
-            this.btnSave.UseVisualStyleBackColor = true;
+            this.btnSave.UseVisualStyleBackColor = false;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // txtSeach
             // 
             this.txtSeach.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSeach.Location = new System.Drawing.Point(1116, 10);
+            this.txtSeach.Location = new System.Drawing.Point(1092, 9);
             this.txtSeach.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtSeach.Name = "txtSeach";
             this.txtSeach.Size = new System.Drawing.Size(163, 28);
             this.txtSeach.TabIndex = 17;
+            this.txtSeach.Text = "Buscar";
             this.txtSeach.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
-            // 
-            // lbSearch
-            // 
-            this.lbSearch.AutoSize = true;
-            this.lbSearch.Location = new System.Drawing.Point(1061, 18);
-            this.lbSearch.Name = "lbSearch";
-            this.lbSearch.Size = new System.Drawing.Size(49, 16);
-            this.lbSearch.TabIndex = 18;
-            this.lbSearch.Text = "Buscar";
-            this.lbSearch.Click += new System.EventHandler(this.label7_Click);
             // 
             // btnDelete
             // 
-            this.btnDelete.Location = new System.Drawing.Point(1356, 575);
+            this.btnDelete.Location = new System.Drawing.Point(1356, 562);
             this.btnDelete.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(99, 23);
+            this.btnDelete.Size = new System.Drawing.Size(99, 36);
             this.btnDelete.TabIndex = 20;
             this.btnDelete.Text = "Eliminar";
             this.btnDelete.UseVisualStyleBackColor = true;
@@ -292,17 +244,6 @@
             this.txtStock.Size = new System.Drawing.Size(100, 22);
             this.txtStock.TabIndex = 23;
             this.txtStock.TextChanged += new System.EventHandler(this.txtStock_TextChanged);
-            // 
-            // lbCategory
-            // 
-            this.lbCategory.AutoSize = true;
-            this.lbCategory.Font = new System.Drawing.Font("Microsoft YaHei UI", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbCategory.Location = new System.Drawing.Point(883, 120);
-            this.lbCategory.Name = "lbCategory";
-            this.lbCategory.Size = new System.Drawing.Size(75, 19);
-            this.lbCategory.TabIndex = 25;
-            this.lbCategory.Text = "Categoria";
-            this.lbCategory.Click += new System.EventHandler(this.label10_Click);
             // 
             // txtCategory
             // 
@@ -384,21 +325,21 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.panel1.Controls.Add(this.lbSearch);
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
             this.panel1.Controls.Add(this.btnSerch);
             this.panel1.Controls.Add(this.txtSeach);
             this.panel1.Controls.Add(this.btnBack);
+            this.panel1.Controls.Add(this.lbProducts);
             this.panel1.Location = new System.Drawing.Point(1, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1376, 46);
+            this.panel1.Size = new System.Drawing.Size(1521, 46);
             this.panel1.TabIndex = 27;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // btnSerch
             // 
             this.btnSerch.BackgroundImage = global::AlexiEconomy.Properties.Resources.Lupa;
-            this.btnSerch.Location = new System.Drawing.Point(1252, 10);
+            this.btnSerch.Location = new System.Drawing.Point(1251, 8);
             this.btnSerch.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnSerch.Name = "btnSerch";
             this.btnSerch.Size = new System.Drawing.Size(27, 29);
@@ -417,17 +358,70 @@
             this.btnBack.UseVisualStyleBackColor = true;
             this.btnBack.Click += new System.EventHandler(this.button1_Click);
             // 
+            // lbName
+            // 
+            this.lbName.AutoSize = true;
+            this.lbName.Font = new System.Drawing.Font("Microsoft YaHei UI", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbName.Location = new System.Drawing.Point(98, 10);
+            this.lbName.Name = "lbName";
+            this.lbName.Size = new System.Drawing.Size(65, 19);
+            this.lbName.TabIndex = 0;
+            this.lbName.Text = "Nombre";
+            this.lbName.Click += new System.EventHandler(this.lbName_Click);
+            // 
+            // txtName
+            // 
+            this.txtName.Location = new System.Drawing.Point(79, 46);
+            this.txtName.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtName.Name = "txtName";
+            this.txtName.Size = new System.Drawing.Size(100, 22);
+            this.txtName.TabIndex = 8;
+            this.txtName.TextChanged += new System.EventHandler(this.txtName_TextChanged);
+            // 
+            // lbMili
+            // 
+            this.lbMili.AutoSize = true;
+            this.lbMili.Font = new System.Drawing.Font("Microsoft YaHei UI", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbMili.Location = new System.Drawing.Point(271, 10);
+            this.lbMili.Name = "lbMili";
+            this.lbMili.Size = new System.Drawing.Size(81, 19);
+            this.lbMili.TabIndex = 1;
+            this.lbMili.Text = "Milimetros";
+            // 
+            // lbCategory
+            // 
+            this.lbCategory.AutoSize = true;
+            this.lbCategory.Font = new System.Drawing.Font("Microsoft YaHei UI", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbCategory.Location = new System.Drawing.Point(883, 120);
+            this.lbCategory.Name = "lbCategory";
+            this.lbCategory.Size = new System.Drawing.Size(75, 19);
+            this.lbCategory.TabIndex = 25;
+            this.lbCategory.Text = "Categoria";
+            this.lbCategory.Click += new System.EventHandler(this.label10_Click);
+            // 
+            // txtPriceIVA
+            // 
+            this.txtPriceIVA.Location = new System.Drawing.Point(221, 159);
+            this.txtPriceIVA.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtPriceIVA.Name = "txtPriceIVA";
+            this.txtPriceIVA.Size = new System.Drawing.Size(84, 22);
+            this.txtPriceIVA.TabIndex = 13;
+            this.txtPriceIVA.TextChanged += new System.EventHandler(this.txtPriceIVA_TextChanged);
+            // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.SystemColors.Info;
+            this.panel2.BackColor = System.Drawing.Color.Lavender;
             this.panel2.Controls.Add(this.txtPriceIVA);
             this.panel2.Controls.Add(this.lbCategory);
             this.panel2.Controls.Add(this.lbMili);
             this.panel2.Controls.Add(this.txtName);
             this.panel2.Controls.Add(this.lbName);
+            this.panel2.Controls.Add(this.lbPrice);
+            this.panel2.Controls.Add(this.txtPrice);
+            this.panel2.Controls.Add(this.lbPriceIVA);
             this.panel2.Location = new System.Drawing.Point(4, 48);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1373, 202);
+            this.panel2.Size = new System.Drawing.Size(1466, 202);
             this.panel2.TabIndex = 28;
             // 
             // AltaProductos
@@ -441,16 +435,12 @@
             this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.txtPriceBuy);
-            this.Controls.Add(this.txtPrice);
             this.Controls.Add(this.cbUnit);
             this.Controls.Add(this.cbIVA);
             this.Controls.Add(this.cbMili);
             this.Controls.Add(this.lbPriceBuy);
-            this.Controls.Add(this.lbPriceIVA);
-            this.Controls.Add(this.lbPrice);
             this.Controls.Add(this.lbUnit);
             this.Controls.Add(this.lbIVA);
-            this.Controls.Add(this.lbProducts);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -470,31 +460,24 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Label lbName;
-        private System.Windows.Forms.Label lbMili;
         private System.Windows.Forms.Label lbProducts;
         private System.Windows.Forms.Label lbIVA;
         private System.Windows.Forms.Label lbUnit;
         private System.Windows.Forms.Label lbPrice;
         private System.Windows.Forms.Label lbPriceIVA;
         private System.Windows.Forms.Label lbPriceBuy;
-        private System.Windows.Forms.TextBox txtName;
         private System.Windows.Forms.ComboBox cbMili;
         private System.Windows.Forms.ComboBox cbIVA;
         private System.Windows.Forms.ComboBox cbUnit;
         private System.Windows.Forms.TextBox txtPrice;
-        private System.Windows.Forms.TextBox txtPriceIVA;
         private System.Windows.Forms.TextBox txtPriceBuy;
         private System.Windows.Forms.Button btnBack;
         private System.Windows.Forms.Button btnSave;
         private System.Windows.Forms.TextBox txtSeach;
-        private System.Windows.Forms.Label lbSearch;
         private System.Windows.Forms.Button btnDelete;
         private System.Windows.Forms.Label lbStock;
         private System.Windows.Forms.TextBox txtStock;
         private System.Windows.Forms.Button btnSerch;
-        private System.Windows.Forms.Label lbCategory;
         private System.Windows.Forms.TextBox txtCategory;
         private System.Windows.Forms.DataGridView TableProducts;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataName;
@@ -504,6 +487,11 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataStock;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataCategory;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label lbName;
+        private System.Windows.Forms.TextBox txtName;
+        private System.Windows.Forms.Label lbMili;
+        private System.Windows.Forms.Label lbCategory;
+        private System.Windows.Forms.TextBox txtPriceIVA;
         private System.Windows.Forms.Panel panel2;
     }
 }
