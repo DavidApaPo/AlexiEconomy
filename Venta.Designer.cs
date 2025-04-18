@@ -127,10 +127,10 @@
             this.PaneUpper.Controls.Add(this.lbPrice);
             this.PaneUpper.Controls.Add(this.lbCantidad);
             this.PaneUpper.Controls.Add(this.txtUnits);
-            this.PaneUpper.Location = new System.Drawing.Point(-6, 50);
+            this.PaneUpper.Location = new System.Drawing.Point(2, 37);
             this.PaneUpper.Margin = new System.Windows.Forms.Padding(2);
             this.PaneUpper.Name = "PaneUpper";
-            this.PaneUpper.Size = new System.Drawing.Size(519, 132);
+            this.PaneUpper.Size = new System.Drawing.Size(445, 162);
             this.PaneUpper.TabIndex = 9;
             // 
             // btnClose
