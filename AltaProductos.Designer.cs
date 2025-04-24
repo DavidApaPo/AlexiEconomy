@@ -53,7 +53,6 @@
             this.dataStock = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataCategory = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.paneTitle = new System.Windows.Forms.Panel();
-            this.btnSearch = new System.Windows.Forms.Button();
             this.lbSearch = new System.Windows.Forms.Label();
             this.btnSerch = new System.Windows.Forms.Button();
             this.btnBack = new System.Windows.Forms.Button();
@@ -324,7 +323,6 @@
             // paneTitle
             // 
             this.paneTitle.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.paneTitle.Controls.Add(this.btnSearch);
             this.paneTitle.Controls.Add(this.lbSearch);
             this.paneTitle.Controls.Add(this.btnSerch);
             this.paneTitle.Controls.Add(this.txtSeach);
@@ -335,15 +333,6 @@
             this.paneTitle.Size = new System.Drawing.Size(2028, 57);
             this.paneTitle.TabIndex = 27;
             this.paneTitle.Paint += new System.Windows.Forms.PaintEventHandler(this.paneTitle_Paint);
-            // 
-            // btnSearch
-            // 
-            this.btnSearch.Location = new System.Drawing.Point(1564, 14);
-            this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(75, 23);
-            this.btnSearch.TabIndex = 26;
-            this.btnSearch.Text = "boton de buscar";
-            this.btnSearch.UseVisualStyleBackColor = true;
             // 
             // lbSearch
             // 
@@ -515,7 +504,6 @@
         private System.Windows.Forms.Label lbMili;
         private System.Windows.Forms.Label lbCategory;
         private System.Windows.Forms.TextBox txtPriceIVA;
-        private System.Windows.Forms.Button btnSearch;
         private System.Windows.Forms.Label lbSearch;
     }
 }

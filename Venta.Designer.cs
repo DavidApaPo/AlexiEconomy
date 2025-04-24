@@ -54,20 +54,18 @@
             // lbName
             // 
             this.lbName.AutoSize = true;
-            this.lbName.Location = new System.Drawing.Point(10, 23);
-            this.lbName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbName.Location = new System.Drawing.Point(13, 28);
             this.lbName.Name = "lbName";
-            this.lbName.Size = new System.Drawing.Size(44, 13);
+            this.lbName.Size = new System.Drawing.Size(56, 16);
             this.lbName.TabIndex = 9;
             this.lbName.Text = "Nombre";
             // 
             // lbCantidad
             // 
             this.lbCantidad.AutoSize = true;
-            this.lbCantidad.Location = new System.Drawing.Point(10, 55);
-            this.lbCantidad.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbCantidad.Location = new System.Drawing.Point(13, 68);
             this.lbCantidad.Name = "lbCantidad";
-            this.lbCantidad.Size = new System.Drawing.Size(49, 13);
+            this.lbCantidad.Size = new System.Drawing.Size(61, 16);
             this.lbCantidad.TabIndex = 10;
             this.lbCantidad.Text = "Cantidad";
             this.lbCantidad.Click += new System.EventHandler(this.label2_Click);
@@ -75,47 +73,46 @@
             // lbPrice
             // 
             this.lbPrice.AutoSize = true;
-            this.lbPrice.Location = new System.Drawing.Point(170, 50);
-            this.lbPrice.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbPrice.Location = new System.Drawing.Point(227, 62);
             this.lbPrice.Name = "lbPrice";
-            this.lbPrice.Size = new System.Drawing.Size(37, 13);
+            this.lbPrice.Size = new System.Drawing.Size(46, 16);
             this.lbPrice.TabIndex = 11;
             this.lbPrice.Text = "Precio";
             // 
             // txtUnits
             // 
-            this.txtUnits.Location = new System.Drawing.Point(70, 55);
-            this.txtUnits.Margin = new System.Windows.Forms.Padding(2);
+            this.txtUnits.Location = new System.Drawing.Point(93, 68);
+            this.txtUnits.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtUnits.Name = "txtUnits";
-            this.txtUnits.Size = new System.Drawing.Size(76, 20);
+            this.txtUnits.Size = new System.Drawing.Size(100, 22);
             this.txtUnits.TabIndex = 1;
             this.txtUnits.TextChanged += new System.EventHandler(this.txtUnits_TextChanged);
             // 
             // txtName
             // 
-            this.txtName.Location = new System.Drawing.Point(70, 16);
-            this.txtName.Margin = new System.Windows.Forms.Padding(2);
+            this.txtName.Location = new System.Drawing.Point(93, 20);
+            this.txtName.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtName.Name = "txtName";
-            this.txtName.Size = new System.Drawing.Size(76, 20);
+            this.txtName.Size = new System.Drawing.Size(100, 22);
             this.txtName.TabIndex = 0;
             this.txtName.TextChanged += new System.EventHandler(this.txtName_TextChanged);
             // 
             // txtPrice
             // 
-            this.txtPrice.Location = new System.Drawing.Point(224, 48);
-            this.txtPrice.Margin = new System.Windows.Forms.Padding(2);
+            this.txtPrice.Location = new System.Drawing.Point(299, 59);
+            this.txtPrice.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtPrice.Name = "txtPrice";
-            this.txtPrice.Size = new System.Drawing.Size(76, 20);
+            this.txtPrice.Size = new System.Drawing.Size(100, 22);
             this.txtPrice.TabIndex = 2;
             this.txtPrice.TextChanged += new System.EventHandler(this.txtPrice_TextChanged);
             // 
             // PaneMenu
             // 
             this.PaneMenu.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.PaneMenu.Location = new System.Drawing.Point(-6, 0);
-            this.PaneMenu.Margin = new System.Windows.Forms.Padding(2);
+            this.PaneMenu.Location = new System.Drawing.Point(-8, 0);
+            this.PaneMenu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.PaneMenu.Name = "PaneMenu";
-            this.PaneMenu.Size = new System.Drawing.Size(1031, 28);
+            this.PaneMenu.Size = new System.Drawing.Size(1375, 34);
             this.PaneMenu.TabIndex = 8;
             // 
             // PaneUpper
@@ -127,17 +124,18 @@
             this.PaneUpper.Controls.Add(this.lbPrice);
             this.PaneUpper.Controls.Add(this.lbCantidad);
             this.PaneUpper.Controls.Add(this.txtUnits);
-            this.PaneUpper.Location = new System.Drawing.Point(2, 37);
-            this.PaneUpper.Margin = new System.Windows.Forms.Padding(2);
+            this.PaneUpper.Location = new System.Drawing.Point(3, 46);
+            this.PaneUpper.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.PaneUpper.Name = "PaneUpper";
-            this.PaneUpper.Size = new System.Drawing.Size(445, 162);
+            this.PaneUpper.Size = new System.Drawing.Size(593, 199);
             this.PaneUpper.TabIndex = 9;
             // 
             // btnClose
             // 
-            this.btnClose.Location = new System.Drawing.Point(938, 478);
+            this.btnClose.Location = new System.Drawing.Point(1251, 588);
+            this.btnClose.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(75, 23);
+            this.btnClose.Size = new System.Drawing.Size(100, 28);
             this.btnClose.TabIndex = 11;
             this.btnClose.Text = "Cerrar";
             this.btnClose.UseVisualStyleBackColor = true;
@@ -146,26 +144,29 @@
             // lbResult
             // 
             this.lbResult.AutoSize = true;
-            this.lbResult.Location = new System.Drawing.Point(776, 407);
+            this.lbResult.Location = new System.Drawing.Point(1035, 501);
+            this.lbResult.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbResult.Name = "lbResult";
-            this.lbResult.Size = new System.Drawing.Size(42, 13);
+            this.lbResult.Size = new System.Drawing.Size(51, 16);
             this.lbResult.TabIndex = 14;
             this.lbResult.Text = "TOTAL";
             // 
             // lbPriceResult
             // 
             this.lbPriceResult.AutoSize = true;
-            this.lbPriceResult.Location = new System.Drawing.Point(944, 407);
+            this.lbPriceResult.Location = new System.Drawing.Point(1259, 501);
+            this.lbPriceResult.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbPriceResult.Name = "lbPriceResult";
-            this.lbPriceResult.Size = new System.Drawing.Size(31, 13);
+            this.lbPriceResult.Size = new System.Drawing.Size(35, 16);
             this.lbPriceResult.TabIndex = 15;
             this.lbPriceResult.Text = "8520";
             // 
             // btnSell
             // 
-            this.btnSell.Location = new System.Drawing.Point(779, 478);
+            this.btnSell.Location = new System.Drawing.Point(1039, 588);
+            this.btnSell.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnSell.Name = "btnSell";
-            this.btnSell.Size = new System.Drawing.Size(75, 23);
+            this.btnSell.Size = new System.Drawing.Size(100, 28);
             this.btnSell.TabIndex = 10;
             this.btnSell.Text = "Cobrar";
             this.btnSell.UseVisualStyleBackColor = true;
@@ -178,9 +179,11 @@
             this.gbSell.Controls.Add(this.txtReceive);
             this.gbSell.Controls.Add(this.lbChange);
             this.gbSell.Controls.Add(this.lbReceive);
-            this.gbSell.Location = new System.Drawing.Point(381, 214);
+            this.gbSell.Location = new System.Drawing.Point(508, 263);
+            this.gbSell.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.gbSell.Name = "gbSell";
-            this.gbSell.Size = new System.Drawing.Size(315, 186);
+            this.gbSell.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gbSell.Size = new System.Drawing.Size(420, 229);
             this.gbSell.TabIndex = 14;
             this.gbSell.TabStop = false;
             this.gbSell.Visible = false;
@@ -188,51 +191,58 @@
             // txtChange
             // 
             this.txtChange.Enabled = false;
-            this.txtChange.Location = new System.Drawing.Point(194, 81);
+            this.txtChange.Location = new System.Drawing.Point(259, 100);
+            this.txtChange.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtChange.Name = "txtChange";
-            this.txtChange.Size = new System.Drawing.Size(100, 20);
+            this.txtChange.Size = new System.Drawing.Size(132, 22);
             this.txtChange.TabIndex = 5;
             this.txtChange.TextChanged += new System.EventHandler(this.txtChange_TextChanged);
             // 
             // txtReceive
             // 
-            this.txtReceive.Location = new System.Drawing.Point(194, 35);
+            this.txtReceive.Location = new System.Drawing.Point(259, 43);
+            this.txtReceive.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtReceive.Name = "txtReceive";
-            this.txtReceive.Size = new System.Drawing.Size(100, 20);
+            this.txtReceive.Size = new System.Drawing.Size(132, 22);
             this.txtReceive.TabIndex = 4;
             this.txtReceive.TextChanged += new System.EventHandler(this.txtReceive_TextChanged);
+            this.txtReceive.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtReceive_KeyDown);
             // 
             // lbChange
             // 
             this.lbChange.AutoSize = true;
-            this.lbChange.Location = new System.Drawing.Point(52, 88);
+            this.lbChange.Location = new System.Drawing.Point(69, 108);
+            this.lbChange.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbChange.Name = "lbChange";
-            this.lbChange.Size = new System.Drawing.Size(42, 13);
+            this.lbChange.Size = new System.Drawing.Size(54, 16);
             this.lbChange.TabIndex = 13;
             this.lbChange.Text = "Cambio";
             // 
             // lbReceive
             // 
             this.lbReceive.AutoSize = true;
-            this.lbReceive.Location = new System.Drawing.Point(49, 35);
+            this.lbReceive.Location = new System.Drawing.Point(65, 43);
+            this.lbReceive.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbReceive.Name = "lbReceive";
-            this.lbReceive.Size = new System.Drawing.Size(49, 13);
+            this.lbReceive.Size = new System.Drawing.Size(62, 16);
             this.lbReceive.TabIndex = 12;
             this.lbReceive.Text = "Recibido";
             // 
             // dgSale
             // 
             this.dgSale.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgSale.Location = new System.Drawing.Point(-40, 272);
+            this.dgSale.Location = new System.Drawing.Point(-53, 335);
+            this.dgSale.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dgSale.Name = "dgSale";
-            this.dgSale.Size = new System.Drawing.Size(240, 150);
+            this.dgSale.RowHeadersWidth = 51;
+            this.dgSale.Size = new System.Drawing.Size(320, 185);
             this.dgSale.TabIndex = 3;
             // 
             // Venta
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1025, 513);
+            this.ClientSize = new System.Drawing.Size(1367, 631);
             this.Controls.Add(this.dgSale);
             this.Controls.Add(this.gbSell);
             this.Controls.Add(this.btnSell);
@@ -241,7 +251,7 @@
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.PaneMenu);
             this.Controls.Add(this.PaneUpper);
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Venta";
             this.StartPosition = System.Windows.Forms.FormStartPosition.WindowsDefaultBounds;
             this.Text = "Venta";

@@ -31,6 +31,7 @@
             this.lbMenu = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.pbLogo = new System.Windows.Forms.PictureBox();
             this.btnEmployes = new System.Windows.Forms.Button();
             this.btnWare = new System.Windows.Forms.Button();
             this.btnCustomers = new System.Windows.Forms.Button();
@@ -38,7 +39,6 @@
             this.btnInventory = new System.Windows.Forms.Button();
             this.btnSales = new System.Windows.Forms.Button();
             this.btnProducts = new System.Windows.Forms.Button();
-            this.pbLogo = new System.Windows.Forms.PictureBox();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).BeginInit();
             this.SuspendLayout();
@@ -51,7 +51,7 @@
             this.lbMenu.ForeColor = System.Drawing.SystemColors.ControlText;
             this.lbMenu.Location = new System.Drawing.Point(594, 9);
             this.lbMenu.Name = "lbMenu";
-            this.lbMenu.Size = new System.Drawing.Size(113, 46);
+            this.lbMenu.Size = new System.Drawing.Size(110, 45);
             this.lbMenu.TabIndex = 0;
             this.lbMenu.Text = "Menu";
             this.lbMenu.Click += new System.EventHandler(this.label1_Click);
@@ -75,6 +75,16 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1327, 153);
             this.panel2.TabIndex = 9;
+            // 
+            // pbLogo
+            // 
+            this.pbLogo.BackgroundImage = global::AlexiEconomy.Properties.Resources.Logo;
+            this.pbLogo.Location = new System.Drawing.Point(3, 9);
+            this.pbLogo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pbLogo.Name = "pbLogo";
+            this.pbLogo.Size = new System.Drawing.Size(154, 139);
+            this.pbLogo.TabIndex = 8;
+            this.pbLogo.TabStop = false;
             // 
             // btnEmployes
             // 
@@ -107,6 +117,7 @@
             this.btnWare.Text = "Bodegas";
             this.btnWare.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnWare.UseVisualStyleBackColor = false;
+            this.btnWare.Click += new System.EventHandler(this.btnWare_Click);
             // 
             // btnCustomers
             // 
@@ -190,16 +201,6 @@
             this.btnProducts.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnProducts.UseVisualStyleBackColor = false;
             this.btnProducts.Click += new System.EventHandler(this.txtProducts_Click);
-            // 
-            // pbLogo
-            // 
-            this.pbLogo.BackgroundImage = global::AlexiEconomy.Properties.Resources.Logo;
-            this.pbLogo.Location = new System.Drawing.Point(3, 9);
-            this.pbLogo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pbLogo.Name = "pbLogo";
-            this.pbLogo.Size = new System.Drawing.Size(154, 139);
-            this.pbLogo.TabIndex = 8;
-            this.pbLogo.TabStop = false;
             // 
             // Menu
             // 

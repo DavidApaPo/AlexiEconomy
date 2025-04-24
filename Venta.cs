@@ -112,7 +112,6 @@ namespace AlexiEconomy
                 gbSell.Visible = true;
                 txtReceive.Focus(); 
                 return true; // Indica que hemos manejado la tecla
-                txtReceive.Text = "1000";
                 txtChange.Text = txtReceive.Text;
             }
             return base.ProcessCmdKey(ref msg, keyData); // Llama a la implementación base para otras teclas
@@ -125,9 +124,14 @@ namespace AlexiEconomy
 
         private void txtReceive_TextChanged(object sender, EventArgs e)
         {
+          
+        }
+
+        private void txtReceive_KeyDown(object sender, KeyEventArgs e)
+        {
             string patron = "^-?[0-9]+(\\.[0-9]+)?$";
             string texto = txtReceive.Text;
-          
+
 
             if (!Regex.IsMatch(texto, patron) && texto != "")
             {
@@ -137,7 +141,7 @@ namespace AlexiEconomy
 
                 txtReceive.SelectionStart = txtReceive.Text.Length;
 
-                 
+
             }
 
             if (txtReceive.Text.Length > 0)
@@ -149,6 +153,5 @@ namespace AlexiEconomy
 
             }
         }
-       
     }
 }
