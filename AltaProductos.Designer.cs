@@ -53,7 +53,6 @@
             this.dataStock = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataCategory = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.paneTitle = new System.Windows.Forms.Panel();
-            this.btnSearch = new System.Windows.Forms.Button();
             this.lbSearch = new System.Windows.Forms.Label();
             this.btnSerch = new System.Windows.Forms.Button();
             this.btnBack = new System.Windows.Forms.Button();
@@ -263,7 +262,7 @@
             this.dataBuy,
             this.dataStock,
             this.dataCategory});
-            this.TableProducts.Location = new System.Drawing.Point(167, 313);
+            this.TableProducts.Location = new System.Drawing.Point(86, 243);
             this.TableProducts.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.TableProducts.Name = "TableProducts";
             this.TableProducts.ReadOnly = true;
@@ -324,7 +323,6 @@
             // paneTitle
             // 
             this.paneTitle.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.paneTitle.Controls.Add(this.btnSearch);
             this.paneTitle.Controls.Add(this.lbSearch);
             this.paneTitle.Controls.Add(this.btnSerch);
             this.paneTitle.Controls.Add(this.txtSeach);
@@ -338,7 +336,7 @@
             // 
             // btnSearch
             // 
-            this.btnSearch.Location = new System.Drawing.Point(1564, 14);
+            this.btnSearch.Location = new System.Drawing.Point(1539, 17);
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.Size = new System.Drawing.Size(75, 23);
             this.btnSearch.TabIndex = 26;
@@ -379,6 +377,7 @@
             // paneData
             // 
             this.paneData.BackColor = System.Drawing.Color.Lavender;
+            this.paneData.Controls.Add(this.TableProducts);
             this.paneData.Controls.Add(this.txtStock);
             this.paneData.Controls.Add(this.txtCategory);
             this.paneData.Controls.Add(this.lbIVA);
@@ -458,7 +457,6 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1670, 1055);
-            this.Controls.Add(this.TableProducts);
             this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.lbProducts);
@@ -515,7 +513,6 @@
         private System.Windows.Forms.Label lbMili;
         private System.Windows.Forms.Label lbCategory;
         private System.Windows.Forms.TextBox txtPriceIVA;
-        private System.Windows.Forms.Button btnSearch;
         private System.Windows.Forms.Label lbSearch;
     }
 }

@@ -43,5 +43,12 @@ namespace AlexiEconomy
         {
 
         }
+
+        private void btnWare_Click(object sender, EventArgs e)
+        {
+            Bodegas _bodegas = new Bodegas();
+            _bodegas.Show();
+            this.Hide();
+        }
     }
 }

@@ -46,6 +46,8 @@
             this.lbChange = new System.Windows.Forms.Label();
             this.lbReceive = new System.Windows.Forms.Label();
             this.dgSale = new System.Windows.Forms.DataGridView();
+            this.buttonregresar = new System.Windows.Forms.Button();
+            this.PaneMenu.SuspendLayout();
             this.PaneUpper.SuspendLayout();
             this.gbSell.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgSale)).BeginInit();
@@ -63,7 +65,7 @@
             // lbCantidad
             // 
             this.lbCantidad.AutoSize = true;
-            this.lbCantidad.Location = new System.Drawing.Point(13, 68);
+            this.lbCantidad.Location = new System.Drawing.Point(218, 26);
             this.lbCantidad.Name = "lbCantidad";
             this.lbCantidad.Size = new System.Drawing.Size(61, 16);
             this.lbCantidad.TabIndex = 10;
@@ -73,7 +75,7 @@
             // lbPrice
             // 
             this.lbPrice.AutoSize = true;
-            this.lbPrice.Location = new System.Drawing.Point(227, 62);
+            this.lbPrice.Location = new System.Drawing.Point(431, 23);
             this.lbPrice.Name = "lbPrice";
             this.lbPrice.Size = new System.Drawing.Size(46, 16);
             this.lbPrice.TabIndex = 11;
@@ -81,7 +83,7 @@
             // 
             // txtUnits
             // 
-            this.txtUnits.Location = new System.Drawing.Point(93, 68);
+            this.txtUnits.Location = new System.Drawing.Point(299, 20);
             this.txtUnits.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtUnits.Name = "txtUnits";
             this.txtUnits.Size = new System.Drawing.Size(100, 22);
@@ -99,7 +101,7 @@
             // 
             // txtPrice
             // 
-            this.txtPrice.Location = new System.Drawing.Point(299, 59);
+            this.txtPrice.Location = new System.Drawing.Point(493, 20);
             this.txtPrice.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtPrice.Name = "txtPrice";
             this.txtPrice.Size = new System.Drawing.Size(100, 22);
@@ -109,6 +111,7 @@
             // PaneMenu
             // 
             this.PaneMenu.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.PaneMenu.Controls.Add(this.buttonregresar);
             this.PaneMenu.Location = new System.Drawing.Point(-8, 0);
             this.PaneMenu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.PaneMenu.Name = "PaneMenu";
@@ -117,23 +120,24 @@
             // 
             // PaneUpper
             // 
-            this.PaneUpper.BackColor = System.Drawing.Color.NavajoWhite;
+            this.PaneUpper.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(253)))), ((int)(((byte)(231)))));
             this.PaneUpper.Controls.Add(this.txtName);
             this.PaneUpper.Controls.Add(this.txtPrice);
             this.PaneUpper.Controls.Add(this.lbName);
             this.PaneUpper.Controls.Add(this.lbPrice);
             this.PaneUpper.Controls.Add(this.lbCantidad);
             this.PaneUpper.Controls.Add(this.txtUnits);
-            this.PaneUpper.Location = new System.Drawing.Point(3, 46);
+            this.PaneUpper.Location = new System.Drawing.Point(-3, 37);
             this.PaneUpper.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.PaneUpper.Name = "PaneUpper";
-            this.PaneUpper.Size = new System.Drawing.Size(593, 199);
+            this.PaneUpper.Size = new System.Drawing.Size(1850, 76);
             this.PaneUpper.TabIndex = 9;
             // 
             // btnClose
             // 
-            this.btnClose.Location = new System.Drawing.Point(1251, 588);
-            this.btnClose.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnClose.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnClose.Location = new System.Drawing.Point(520, 203);
+            this.btnClose.Margin = new System.Windows.Forms.Padding(4);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(100, 28);
             this.btnClose.TabIndex = 11;
@@ -144,17 +148,18 @@
             // lbResult
             // 
             this.lbResult.AutoSize = true;
-            this.lbResult.Location = new System.Drawing.Point(1035, 501);
+            this.lbResult.Location = new System.Drawing.Point(314, 141);
             this.lbResult.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbResult.Name = "lbResult";
             this.lbResult.Size = new System.Drawing.Size(51, 16);
             this.lbResult.TabIndex = 14;
             this.lbResult.Text = "TOTAL";
+            this.lbResult.Click += new System.EventHandler(this.lbResult_Click);
             // 
             // lbPriceResult
             // 
             this.lbPriceResult.AutoSize = true;
-            this.lbPriceResult.Location = new System.Drawing.Point(1259, 501);
+            this.lbPriceResult.Location = new System.Drawing.Point(433, 141);
             this.lbPriceResult.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbPriceResult.Name = "lbPriceResult";
             this.lbPriceResult.Size = new System.Drawing.Size(35, 16);
@@ -163,27 +168,35 @@
             // 
             // btnSell
             // 
-            this.btnSell.Location = new System.Drawing.Point(1039, 588);
-            this.btnSell.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnSell.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnSell.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnSell.Location = new System.Drawing.Point(399, 203);
+            this.btnSell.Margin = new System.Windows.Forms.Padding(4);
             this.btnSell.Name = "btnSell";
             this.btnSell.Size = new System.Drawing.Size(100, 28);
             this.btnSell.TabIndex = 10;
             this.btnSell.Text = "Cobrar";
-            this.btnSell.UseVisualStyleBackColor = true;
+            this.btnSell.UseVisualStyleBackColor = false;
             this.btnSell.Click += new System.EventHandler(this.btnSell_Click);
             this.btnSell.KeyDown += new System.Windows.Forms.KeyEventHandler(this.btnSell_KeyDown);
             // 
             // gbSell
             // 
+            this.gbSell.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
+            this.gbSell.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.gbSell.Controls.Add(this.txtChange);
             this.gbSell.Controls.Add(this.txtReceive);
+            this.gbSell.Controls.Add(this.btnClose);
+            this.gbSell.Controls.Add(this.btnSell);
             this.gbSell.Controls.Add(this.lbChange);
+            this.gbSell.Controls.Add(this.lbPriceResult);
             this.gbSell.Controls.Add(this.lbReceive);
-            this.gbSell.Location = new System.Drawing.Point(508, 263);
-            this.gbSell.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gbSell.Controls.Add(this.lbResult);
+            this.gbSell.Location = new System.Drawing.Point(829, 361);
+            this.gbSell.Margin = new System.Windows.Forms.Padding(4);
             this.gbSell.Name = "gbSell";
-            this.gbSell.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.gbSell.Size = new System.Drawing.Size(420, 229);
+            this.gbSell.Padding = new System.Windows.Forms.Padding(4);
+            this.gbSell.Size = new System.Drawing.Size(638, 239);
             this.gbSell.TabIndex = 14;
             this.gbSell.TabStop = false;
             this.gbSell.Visible = false;
@@ -191,8 +204,8 @@
             // txtChange
             // 
             this.txtChange.Enabled = false;
-            this.txtChange.Location = new System.Drawing.Point(259, 100);
-            this.txtChange.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtChange.Location = new System.Drawing.Point(147, 108);
+            this.txtChange.Margin = new System.Windows.Forms.Padding(4);
             this.txtChange.Name = "txtChange";
             this.txtChange.Size = new System.Drawing.Size(132, 22);
             this.txtChange.TabIndex = 5;
@@ -200,12 +213,13 @@
             // 
             // txtReceive
             // 
-            this.txtReceive.Location = new System.Drawing.Point(259, 43);
-            this.txtReceive.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtReceive.Location = new System.Drawing.Point(147, 40);
+            this.txtReceive.Margin = new System.Windows.Forms.Padding(4);
             this.txtReceive.Name = "txtReceive";
             this.txtReceive.Size = new System.Drawing.Size(132, 22);
             this.txtReceive.TabIndex = 4;
             this.txtReceive.TextChanged += new System.EventHandler(this.txtReceive_TextChanged);
+            this.txtReceive.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtReceive_KeyDown);
             // 
             // lbChange
             // 
@@ -230,24 +244,33 @@
             // dgSale
             // 
             this.dgSale.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgSale.Location = new System.Drawing.Point(43, 332);
-            this.dgSale.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+
+            this.dgSale.Location = new System.Drawing.Point(-7, 116);
+            this.dgSale.Margin = new System.Windows.Forms.Padding(4);
             this.dgSale.Name = "dgSale";
             this.dgSale.RowHeadersWidth = 51;
-            this.dgSale.Size = new System.Drawing.Size(320, 185);
+            this.dgSale.Size = new System.Drawing.Size(1854, 206);
             this.dgSale.TabIndex = 3;
+            // 
+            // buttonregresar
+            // 
+            this.buttonregresar.BackColor = System.Drawing.Color.Transparent;
+            this.buttonregresar.BackgroundImage = global::AlexiEconomy.Properties.Resources.flecha_regesar;
+            this.buttonregresar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.buttonregresar.Location = new System.Drawing.Point(27, 0);
+            this.buttonregresar.Name = "buttonregresar";
+            this.buttonregresar.Size = new System.Drawing.Size(127, 41);
+            this.buttonregresar.TabIndex = 0;
+            this.buttonregresar.Text = "     Regresar ";
+            this.buttonregresar.UseVisualStyleBackColor = false;
             // 
             // Venta
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1367, 631);
+            this.ClientSize = new System.Drawing.Size(1480, 613);
             this.Controls.Add(this.dgSale);
             this.Controls.Add(this.gbSell);
-            this.Controls.Add(this.btnSell);
-            this.Controls.Add(this.lbPriceResult);
-            this.Controls.Add(this.lbResult);
-            this.Controls.Add(this.btnClose);
             this.Controls.Add(this.PaneMenu);
             this.Controls.Add(this.PaneUpper);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -255,13 +278,13 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.WindowsDefaultBounds;
             this.Text = "Venta";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.PaneMenu.ResumeLayout(false);
             this.PaneUpper.ResumeLayout(false);
             this.PaneUpper.PerformLayout();
             this.gbSell.ResumeLayout(false);
             this.gbSell.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgSale)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -285,5 +308,6 @@
         private System.Windows.Forms.Label lbChange;
         private System.Windows.Forms.Label lbReceive;
         private System.Windows.Forms.DataGridView dgSale;
+        private System.Windows.Forms.Button buttonregresar;
     }
 }
