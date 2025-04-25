@@ -262,7 +262,7 @@
             this.dataBuy,
             this.dataStock,
             this.dataCategory});
-            this.TableProducts.Location = new System.Drawing.Point(167, 313);
+            this.TableProducts.Location = new System.Drawing.Point(86, 243);
             this.TableProducts.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.TableProducts.Name = "TableProducts";
             this.TableProducts.ReadOnly = true;
@@ -334,6 +334,15 @@
             this.paneTitle.TabIndex = 27;
             this.paneTitle.Paint += new System.Windows.Forms.PaintEventHandler(this.paneTitle_Paint);
             // 
+            // btnSearch
+            // 
+            this.btnSearch.Location = new System.Drawing.Point(1539, 17);
+            this.btnSearch.Name = "btnSearch";
+            this.btnSearch.Size = new System.Drawing.Size(75, 23);
+            this.btnSearch.TabIndex = 26;
+            this.btnSearch.Text = "boton de buscar";
+            this.btnSearch.UseVisualStyleBackColor = true;
+            // 
             // lbSearch
             // 
             this.lbSearch.AutoSize = true;
@@ -368,6 +377,7 @@
             // paneData
             // 
             this.paneData.BackColor = System.Drawing.Color.Lavender;
+            this.paneData.Controls.Add(this.TableProducts);
             this.paneData.Controls.Add(this.txtStock);
             this.paneData.Controls.Add(this.txtCategory);
             this.paneData.Controls.Add(this.lbIVA);
@@ -447,7 +457,6 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1670, 1055);
-            this.Controls.Add(this.TableProducts);
             this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.lbProducts);
