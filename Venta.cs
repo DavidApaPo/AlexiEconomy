@@ -158,5 +158,13 @@ namespace AlexiEconomy
         {
 
         }
+
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            Menu _menu = new Menu();
+            _menu.Show();
+            this.Hide();
+        }
     }
 }

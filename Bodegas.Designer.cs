@@ -36,7 +36,7 @@
             this.lbCP = new System.Windows.Forms.Label();
             this.lbStreet = new System.Windows.Forms.Label();
             this.lbNameProduct = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
+            this.lbTitle = new System.Windows.Forms.Label();
             this.lbSearch = new System.Windows.Forms.Label();
             this.lbResult = new System.Windows.Forms.Label();
             this.lbPrice = new System.Windows.Forms.Label();
@@ -54,7 +54,12 @@
             this.btnSave = new System.Windows.Forms.Button();
             this.btnSearch = new System.Windows.Forms.Button();
             this.dgWare = new System.Windows.Forms.DataGridView();
+            this.btnViewProducts = new System.Windows.Forms.Button();
+            this.dgWareProducts = new System.Windows.Forms.DataGridView();
+            this.PaneWareProducts = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.dgWare)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgWareProducts)).BeginInit();
+            this.PaneWareProducts.SuspendLayout();
             this.SuspendLayout();
             // 
             // lbNameWare
@@ -126,14 +131,14 @@
             this.lbNameProduct.TabIndex = 7;
             this.lbNameProduct.Text = "Nombre";
             // 
-            // label10
+            // lbTitle
             // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(610, 9);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(89, 16);
-            this.label10.TabIndex = 10;
-            this.label10.Text = "Alta Bodegas";
+            this.lbTitle.AutoSize = true;
+            this.lbTitle.Location = new System.Drawing.Point(610, 9);
+            this.lbTitle.Name = "lbTitle";
+            this.lbTitle.Size = new System.Drawing.Size(89, 16);
+            this.lbTitle.TabIndex = 10;
+            this.lbTitle.Text = "Alta Bodegas";
             // 
             // lbSearch
             // 
@@ -271,11 +276,42 @@
             this.dgWare.Size = new System.Drawing.Size(240, 150);
             this.dgWare.TabIndex = 27;
             // 
+            // btnViewProducts
+            // 
+            this.btnViewProducts.Location = new System.Drawing.Point(759, 308);
+            this.btnViewProducts.Name = "btnViewProducts";
+            this.btnViewProducts.Size = new System.Drawing.Size(116, 23);
+            this.btnViewProducts.TabIndex = 28;
+            this.btnViewProducts.Text = "Ver Productos";
+            this.btnViewProducts.UseVisualStyleBackColor = true;
+            this.btnViewProducts.Click += new System.EventHandler(this.btnViewProducts_Click);
+            // 
+            // dgWareProducts
+            // 
+            this.dgWareProducts.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgWareProducts.Location = new System.Drawing.Point(42, 8);
+            this.dgWareProducts.Name = "dgWareProducts";
+            this.dgWareProducts.RowHeadersWidth = 51;
+            this.dgWareProducts.RowTemplate.Height = 24;
+            this.dgWareProducts.Size = new System.Drawing.Size(240, 150);
+            this.dgWareProducts.TabIndex = 29;
+            // 
+            // PaneWareProducts
+            // 
+            this.PaneWareProducts.Controls.Add(this.dgWareProducts);
+            this.PaneWareProducts.Location = new System.Drawing.Point(890, 284);
+            this.PaneWareProducts.Name = "PaneWareProducts";
+            this.PaneWareProducts.Size = new System.Drawing.Size(375, 187);
+            this.PaneWareProducts.TabIndex = 30;
+            this.PaneWareProducts.Visible = false;
+            // 
             // Bodegas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1499, 679);
+            this.Controls.Add(this.PaneWareProducts);
+            this.Controls.Add(this.btnViewProducts);
             this.Controls.Add(this.dgWare);
             this.Controls.Add(this.btnSearch);
             this.Controls.Add(this.btnSave);
@@ -293,7 +329,7 @@
             this.Controls.Add(this.lbPrice);
             this.Controls.Add(this.lbResult);
             this.Controls.Add(this.lbSearch);
-            this.Controls.Add(this.label10);
+            this.Controls.Add(this.lbTitle);
             this.Controls.Add(this.lbNameProduct);
             this.Controls.Add(this.lbStreet);
             this.Controls.Add(this.lbCP);
@@ -305,6 +341,8 @@
             this.Name = "Bodegas";
             this.Text = "Bodegas";
             ((System.ComponentModel.ISupportInitialize)(this.dgWare)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgWareProducts)).EndInit();
+            this.PaneWareProducts.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -320,7 +358,7 @@
         private System.Windows.Forms.Label lbCP;
         private System.Windows.Forms.Label lbStreet;
         private System.Windows.Forms.Label lbNameProduct;
-        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label lbTitle;
         private System.Windows.Forms.Label lbSearch;
         private System.Windows.Forms.Label lbResult;
         private System.Windows.Forms.Label lbPrice;
@@ -338,5 +376,8 @@
         private System.Windows.Forms.Button btnSave;
         private System.Windows.Forms.Button btnSearch;
         private System.Windows.Forms.DataGridView dgWare;
+        private System.Windows.Forms.Button btnViewProducts;
+        private System.Windows.Forms.DataGridView dgWareProducts;
+        private System.Windows.Forms.Panel PaneWareProducts;
     }
 }
