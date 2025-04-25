@@ -10,21 +10,11 @@ using System.Windows.Forms;
 
 namespace AlexiEconomy
 {
-    public partial class Bodegas : Form
+    public partial class Proveedores : Form
     {
-        public Bodegas()
+        public Proveedores()
         {
             InitializeComponent();
-        }
-
-        private void btnViewProducts_Click(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void Bodegas_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

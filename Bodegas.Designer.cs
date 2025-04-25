@@ -340,6 +340,8 @@
             this.Controls.Add(this.lbNameWare);
             this.Name = "Bodegas";
             this.Text = "Bodegas";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.Bodegas_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgWare)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgWareProducts)).EndInit();
             this.PaneWareProducts.ResumeLayout(false);
