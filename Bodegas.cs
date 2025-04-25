@@ -17,6 +17,9 @@ namespace AlexiEconomy
             InitializeComponent();
         }
 
- 
+        private void btnViewProducts_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }

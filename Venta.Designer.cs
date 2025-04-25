@@ -29,12 +29,13 @@
         private void InitializeComponent()
         {
             this.lbName = new System.Windows.Forms.Label();
-            this.lbCantidad = new System.Windows.Forms.Label();
+            this.lbUnits = new System.Windows.Forms.Label();
             this.lbPrice = new System.Windows.Forms.Label();
             this.txtUnits = new System.Windows.Forms.TextBox();
             this.txtName = new System.Windows.Forms.TextBox();
             this.txtPrice = new System.Windows.Forms.TextBox();
             this.PaneMenu = new System.Windows.Forms.Panel();
+            this.btnBack = new System.Windows.Forms.Button();
             this.PaneUpper = new System.Windows.Forms.Panel();
             this.btnClose = new System.Windows.Forms.Button();
             this.lbResult = new System.Windows.Forms.Label();
@@ -46,7 +47,6 @@
             this.lbChange = new System.Windows.Forms.Label();
             this.lbReceive = new System.Windows.Forms.Label();
             this.dgSale = new System.Windows.Forms.DataGridView();
-            this.buttonregresar = new System.Windows.Forms.Button();
             this.PaneMenu.SuspendLayout();
             this.PaneUpper.SuspendLayout();
             this.gbSell.SuspendLayout();
@@ -62,15 +62,15 @@
             this.lbName.TabIndex = 9;
             this.lbName.Text = "Nombre";
             // 
-            // lbCantidad
+            // lbUnits
             // 
-            this.lbCantidad.AutoSize = true;
-            this.lbCantidad.Location = new System.Drawing.Point(218, 26);
-            this.lbCantidad.Name = "lbCantidad";
-            this.lbCantidad.Size = new System.Drawing.Size(61, 16);
-            this.lbCantidad.TabIndex = 10;
-            this.lbCantidad.Text = "Cantidad";
-            this.lbCantidad.Click += new System.EventHandler(this.label2_Click);
+            this.lbUnits.AutoSize = true;
+            this.lbUnits.Location = new System.Drawing.Point(218, 26);
+            this.lbUnits.Name = "lbUnits";
+            this.lbUnits.Size = new System.Drawing.Size(61, 16);
+            this.lbUnits.TabIndex = 10;
+            this.lbUnits.Text = "Cantidad";
+            this.lbUnits.Click += new System.EventHandler(this.label2_Click);
             // 
             // lbPrice
             // 
@@ -111,12 +111,25 @@
             // PaneMenu
             // 
             this.PaneMenu.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.PaneMenu.Controls.Add(this.buttonregresar);
+            this.PaneMenu.Controls.Add(this.btnBack);
             this.PaneMenu.Location = new System.Drawing.Point(-8, 0);
             this.PaneMenu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.PaneMenu.Name = "PaneMenu";
             this.PaneMenu.Size = new System.Drawing.Size(1375, 34);
             this.PaneMenu.TabIndex = 8;
+            // 
+            // btnBack
+            // 
+            this.btnBack.BackColor = System.Drawing.Color.Transparent;
+            this.btnBack.BackgroundImage = global::AlexiEconomy.Properties.Resources.flecha_regesar;
+            this.btnBack.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnBack.Location = new System.Drawing.Point(27, 0);
+            this.btnBack.Name = "btnBack";
+            this.btnBack.Size = new System.Drawing.Size(127, 41);
+            this.btnBack.TabIndex = 0;
+            this.btnBack.Text = "     Regresar ";
+            this.btnBack.UseVisualStyleBackColor = false;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
             // PaneUpper
             // 
@@ -125,7 +138,7 @@
             this.PaneUpper.Controls.Add(this.txtPrice);
             this.PaneUpper.Controls.Add(this.lbName);
             this.PaneUpper.Controls.Add(this.lbPrice);
-            this.PaneUpper.Controls.Add(this.lbCantidad);
+            this.PaneUpper.Controls.Add(this.lbUnits);
             this.PaneUpper.Controls.Add(this.txtUnits);
             this.PaneUpper.Location = new System.Drawing.Point(-3, 37);
             this.PaneUpper.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -136,7 +149,7 @@
             // btnClose
             // 
             this.btnClose.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnClose.Location = new System.Drawing.Point(520, 203);
+            this.btnClose.Location = new System.Drawing.Point(1321, 541);
             this.btnClose.Margin = new System.Windows.Forms.Padding(4);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(100, 28);
@@ -148,7 +161,7 @@
             // lbResult
             // 
             this.lbResult.AutoSize = true;
-            this.lbResult.Location = new System.Drawing.Point(314, 141);
+            this.lbResult.Location = new System.Drawing.Point(1199, 489);
             this.lbResult.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbResult.Name = "lbResult";
             this.lbResult.Size = new System.Drawing.Size(51, 16);
@@ -159,7 +172,7 @@
             // lbPriceResult
             // 
             this.lbPriceResult.AutoSize = true;
-            this.lbPriceResult.Location = new System.Drawing.Point(433, 141);
+            this.lbPriceResult.Location = new System.Drawing.Point(1351, 489);
             this.lbPriceResult.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbPriceResult.Name = "lbPriceResult";
             this.lbPriceResult.Size = new System.Drawing.Size(35, 16);
@@ -170,7 +183,7 @@
             // 
             this.btnSell.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.btnSell.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnSell.Location = new System.Drawing.Point(399, 203);
+            this.btnSell.Location = new System.Drawing.Point(1181, 541);
             this.btnSell.Margin = new System.Windows.Forms.Padding(4);
             this.btnSell.Name = "btnSell";
             this.btnSell.Size = new System.Drawing.Size(100, 28);
@@ -186,13 +199,9 @@
             this.gbSell.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.gbSell.Controls.Add(this.txtChange);
             this.gbSell.Controls.Add(this.txtReceive);
-            this.gbSell.Controls.Add(this.btnClose);
-            this.gbSell.Controls.Add(this.btnSell);
             this.gbSell.Controls.Add(this.lbChange);
-            this.gbSell.Controls.Add(this.lbPriceResult);
             this.gbSell.Controls.Add(this.lbReceive);
-            this.gbSell.Controls.Add(this.lbResult);
-            this.gbSell.Location = new System.Drawing.Point(829, 361);
+            this.gbSell.Location = new System.Drawing.Point(431, 343);
             this.gbSell.Margin = new System.Windows.Forms.Padding(4);
             this.gbSell.Name = "gbSell";
             this.gbSell.Padding = new System.Windows.Forms.Padding(4);
@@ -244,25 +253,12 @@
             // dgSale
             // 
             this.dgSale.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-
             this.dgSale.Location = new System.Drawing.Point(-7, 116);
             this.dgSale.Margin = new System.Windows.Forms.Padding(4);
             this.dgSale.Name = "dgSale";
             this.dgSale.RowHeadersWidth = 51;
             this.dgSale.Size = new System.Drawing.Size(1854, 206);
             this.dgSale.TabIndex = 3;
-            // 
-            // buttonregresar
-            // 
-            this.buttonregresar.BackColor = System.Drawing.Color.Transparent;
-            this.buttonregresar.BackgroundImage = global::AlexiEconomy.Properties.Resources.flecha_regesar;
-            this.buttonregresar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.buttonregresar.Location = new System.Drawing.Point(27, 0);
-            this.buttonregresar.Name = "buttonregresar";
-            this.buttonregresar.Size = new System.Drawing.Size(127, 41);
-            this.buttonregresar.TabIndex = 0;
-            this.buttonregresar.Text = "     Regresar ";
-            this.buttonregresar.UseVisualStyleBackColor = false;
             // 
             // Venta
             // 
@@ -271,8 +267,12 @@
             this.ClientSize = new System.Drawing.Size(1480, 613);
             this.Controls.Add(this.dgSale);
             this.Controls.Add(this.gbSell);
+            this.Controls.Add(this.btnClose);
             this.Controls.Add(this.PaneMenu);
+            this.Controls.Add(this.btnSell);
             this.Controls.Add(this.PaneUpper);
+            this.Controls.Add(this.lbResult);
+            this.Controls.Add(this.lbPriceResult);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Venta";
             this.StartPosition = System.Windows.Forms.FormStartPosition.WindowsDefaultBounds;
@@ -285,13 +285,14 @@
             this.gbSell.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgSale)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
         private System.Windows.Forms.Label lbName;
-        private System.Windows.Forms.Label lbCantidad;
+        private System.Windows.Forms.Label lbUnits;
         private System.Windows.Forms.Label lbPrice;
         private System.Windows.Forms.TextBox txtUnits;
         private System.Windows.Forms.TextBox txtName;
@@ -308,6 +309,6 @@
         private System.Windows.Forms.Label lbChange;
         private System.Windows.Forms.Label lbReceive;
         private System.Windows.Forms.DataGridView dgSale;
-        private System.Windows.Forms.Button buttonregresar;
+        private System.Windows.Forms.Button btnBack;
     }
 }

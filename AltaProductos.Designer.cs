@@ -334,15 +334,6 @@
             this.paneTitle.TabIndex = 27;
             this.paneTitle.Paint += new System.Windows.Forms.PaintEventHandler(this.paneTitle_Paint);
             // 
-            // btnSearch
-            // 
-            this.btnSearch.Location = new System.Drawing.Point(1539, 17);
-            this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(75, 23);
-            this.btnSearch.TabIndex = 26;
-            this.btnSearch.Text = "boton de buscar";
-            this.btnSearch.UseVisualStyleBackColor = true;
-            // 
             // lbSearch
             // 
             this.lbSearch.AutoSize = true;
@@ -355,7 +346,7 @@
             // btnSerch
             // 
             this.btnSerch.BackgroundImage = global::AlexiEconomy.Properties.Resources.Lupa;
-            this.btnSerch.Location = new System.Drawing.Point(1668, 10);
+            this.btnSerch.Location = new System.Drawing.Point(1564, 11);
             this.btnSerch.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.btnSerch.Name = "btnSerch";
             this.btnSerch.Size = new System.Drawing.Size(27, 30);
@@ -399,7 +390,7 @@
             this.paneData.Location = new System.Drawing.Point(4, 63);
             this.paneData.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.paneData.Name = "paneData";
-            this.paneData.Size = new System.Drawing.Size(1928, 618);
+            this.paneData.Size = new System.Drawing.Size(2028, 618);
             this.paneData.TabIndex = 28;
             // 
             // txtPriceIVA
@@ -456,7 +447,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1670, 1055);
+            this.ClientSize = new System.Drawing.Size(2169, 1055);
             this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.lbProducts);
