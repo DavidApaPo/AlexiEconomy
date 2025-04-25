@@ -21,5 +21,10 @@ namespace AlexiEconomy
         {
             
         }
+
+        private void Bodegas_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
