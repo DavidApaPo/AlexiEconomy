@@ -28,44 +28,59 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
+            this.lbNameWare = new System.Windows.Forms.Label();
+            this.txtNameWare = new System.Windows.Forms.TextBox();
+            this.lbState = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
+            this.lbCity = new System.Windows.Forms.Label();
+            this.lbCP = new System.Windows.Forms.Label();
+            this.lbStreet = new System.Windows.Forms.Label();
+            this.lbNameProduct = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
+            this.lbSearch = new System.Windows.Forms.Label();
+            this.lbResult = new System.Windows.Forms.Label();
+            this.lbPrice = new System.Windows.Forms.Label();
+            this.lbStock = new System.Windows.Forms.Label();
+            this.txtResult = new System.Windows.Forms.TextBox();
+            this.txtPrice = new System.Windows.Forms.TextBox();
+            this.txtStock = new System.Windows.Forms.TextBox();
+            this.txtNameProduct = new System.Windows.Forms.TextBox();
+            this.txtStreet = new System.Windows.Forms.TextBox();
+            this.txtCP = new System.Windows.Forms.TextBox();
+            this.txtCity = new System.Windows.Forms.TextBox();
+            this.txtState = new System.Windows.Forms.TextBox();
+            this.txtSearch = new System.Windows.Forms.TextBox();
+            this.btnDelete = new System.Windows.Forms.Button();
+            this.btnSave = new System.Windows.Forms.Button();
+            this.btnSearch = new System.Windows.Forms.Button();
+            this.dgWare = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.dgWare)).BeginInit();
             this.SuspendLayout();
             // 
-            // label1
+            // lbNameWare
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(131, 25);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(56, 16);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Nombre";
+            this.lbNameWare.AutoSize = true;
+            this.lbNameWare.Location = new System.Drawing.Point(131, 25);
+            this.lbNameWare.Name = "lbNameWare";
+            this.lbNameWare.Size = new System.Drawing.Size(56, 16);
+            this.lbNameWare.TabIndex = 0;
+            this.lbNameWare.Text = "Nombre";
             // 
-            // textBox1
+            // txtNameWare
             // 
-            this.textBox1.Location = new System.Drawing.Point(134, 58);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 22);
-            this.textBox1.TabIndex = 1;
+            this.txtNameWare.Location = new System.Drawing.Point(134, 58);
+            this.txtNameWare.Name = "txtNameWare";
+            this.txtNameWare.Size = new System.Drawing.Size(100, 22);
+            this.txtNameWare.TabIndex = 1;
             // 
-            // label2
+            // lbState
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(143, 134);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(62, 16);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Locacion";
+            this.lbState.AutoSize = true;
+            this.lbState.Location = new System.Drawing.Point(143, 134);
+            this.lbState.Name = "lbState";
+            this.lbState.Size = new System.Drawing.Size(50, 16);
+            this.lbState.TabIndex = 2;
+            this.lbState.Text = "Estado";
             // 
             // label3
             // 
@@ -75,97 +90,221 @@
             this.label3.Size = new System.Drawing.Size(0, 16);
             this.label3.TabIndex = 3;
             // 
-            // label4
+            // lbCity
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(691, 247);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(44, 16);
-            this.label4.TabIndex = 4;
-            this.label4.Text = "label4";
+            this.lbCity.AutoSize = true;
+            this.lbCity.Location = new System.Drawing.Point(235, 134);
+            this.lbCity.Name = "lbCity";
+            this.lbCity.Size = new System.Drawing.Size(64, 16);
+            this.lbCity.TabIndex = 4;
+            this.lbCity.Text = "Municipio";
             // 
-            // label5
+            // lbCP
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(761, 247);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(44, 16);
-            this.label5.TabIndex = 5;
-            this.label5.Text = "label5";
+            this.lbCP.AutoSize = true;
+            this.lbCP.Location = new System.Drawing.Point(370, 134);
+            this.lbCP.Name = "lbCP";
+            this.lbCP.Size = new System.Drawing.Size(25, 16);
+            this.lbCP.TabIndex = 5;
+            this.lbCP.Text = "CP";
             // 
-            // label6
+            // lbStreet
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(835, 247);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(44, 16);
-            this.label6.TabIndex = 6;
-            this.label6.Text = "label6";
+            this.lbStreet.AutoSize = true;
+            this.lbStreet.Location = new System.Drawing.Point(482, 134);
+            this.lbStreet.Name = "lbStreet";
+            this.lbStreet.Size = new System.Drawing.Size(38, 16);
+            this.lbStreet.TabIndex = 6;
+            this.lbStreet.Text = "Calle";
             // 
-            // label7
+            // lbNameProduct
             // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(915, 247);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(44, 16);
-            this.label7.TabIndex = 7;
-            this.label7.Text = "label7";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(1139, 538);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(44, 16);
-            this.label8.TabIndex = 8;
-            this.label8.Text = "label8";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(1063, 538);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(44, 16);
-            this.label9.TabIndex = 9;
-            this.label9.Text = "label9";
+            this.lbNameProduct.AutoSize = true;
+            this.lbNameProduct.Location = new System.Drawing.Point(643, 124);
+            this.lbNameProduct.Name = "lbNameProduct";
+            this.lbNameProduct.Size = new System.Drawing.Size(56, 16);
+            this.lbNameProduct.TabIndex = 7;
+            this.lbNameProduct.Text = "Nombre";
             // 
             // label10
             // 
             this.label10.AutoSize = true;
             this.label10.Location = new System.Drawing.Point(610, 9);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(51, 16);
+            this.label10.Size = new System.Drawing.Size(89, 16);
             this.label10.TabIndex = 10;
-            this.label10.Text = "label10";
+            this.label10.Text = "Alta Bodegas";
             // 
-            // label11
+            // lbSearch
             // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(1168, 58);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(51, 16);
-            this.label11.TabIndex = 11;
-            this.label11.Text = "label11";
+            this.lbSearch.AutoSize = true;
+            this.lbSearch.Location = new System.Drawing.Point(1139, 39);
+            this.lbSearch.Name = "lbSearch";
+            this.lbSearch.Size = new System.Drawing.Size(49, 16);
+            this.lbSearch.TabIndex = 11;
+            this.lbSearch.Text = "Buscar";
+            // 
+            // lbResult
+            // 
+            this.lbResult.AutoSize = true;
+            this.lbResult.Location = new System.Drawing.Point(994, 124);
+            this.lbResult.Name = "lbResult";
+            this.lbResult.Size = new System.Drawing.Size(38, 16);
+            this.lbResult.TabIndex = 12;
+            this.lbResult.Text = "Total";
+            // 
+            // lbPrice
+            // 
+            this.lbPrice.AutoSize = true;
+            this.lbPrice.Location = new System.Drawing.Point(903, 124);
+            this.lbPrice.Name = "lbPrice";
+            this.lbPrice.Size = new System.Drawing.Size(46, 16);
+            this.lbPrice.TabIndex = 13;
+            this.lbPrice.Text = "Precio";
+            // 
+            // lbStock
+            // 
+            this.lbStock.AutoSize = true;
+            this.lbStock.Location = new System.Drawing.Point(814, 124);
+            this.lbStock.Name = "lbStock";
+            this.lbStock.Size = new System.Drawing.Size(61, 16);
+            this.lbStock.TabIndex = 14;
+            this.lbStock.Text = "Cantidad";
+            // 
+            // txtResult
+            // 
+            this.txtResult.Location = new System.Drawing.Point(997, 177);
+            this.txtResult.Name = "txtResult";
+            this.txtResult.Size = new System.Drawing.Size(100, 22);
+            this.txtResult.TabIndex = 15;
+            // 
+            // txtPrice
+            // 
+            this.txtPrice.Location = new System.Drawing.Point(890, 177);
+            this.txtPrice.Name = "txtPrice";
+            this.txtPrice.Size = new System.Drawing.Size(100, 22);
+            this.txtPrice.TabIndex = 16;
+            // 
+            // txtStock
+            // 
+            this.txtStock.Location = new System.Drawing.Point(784, 177);
+            this.txtStock.Name = "txtStock";
+            this.txtStock.Size = new System.Drawing.Size(100, 22);
+            this.txtStock.TabIndex = 17;
+            // 
+            // txtNameProduct
+            // 
+            this.txtNameProduct.Location = new System.Drawing.Point(628, 177);
+            this.txtNameProduct.Name = "txtNameProduct";
+            this.txtNameProduct.Size = new System.Drawing.Size(100, 22);
+            this.txtNameProduct.TabIndex = 18;
+            // 
+            // txtStreet
+            // 
+            this.txtStreet.Location = new System.Drawing.Point(450, 177);
+            this.txtStreet.Name = "txtStreet";
+            this.txtStreet.Size = new System.Drawing.Size(100, 22);
+            this.txtStreet.TabIndex = 19;
+            // 
+            // txtCP
+            // 
+            this.txtCP.Location = new System.Drawing.Point(335, 177);
+            this.txtCP.Name = "txtCP";
+            this.txtCP.Size = new System.Drawing.Size(100, 22);
+            this.txtCP.TabIndex = 20;
+            // 
+            // txtCity
+            // 
+            this.txtCity.Location = new System.Drawing.Point(226, 177);
+            this.txtCity.Name = "txtCity";
+            this.txtCity.Size = new System.Drawing.Size(100, 22);
+            this.txtCity.TabIndex = 21;
+            // 
+            // txtState
+            // 
+            this.txtState.Location = new System.Drawing.Point(120, 177);
+            this.txtState.Name = "txtState";
+            this.txtState.Size = new System.Drawing.Size(100, 22);
+            this.txtState.TabIndex = 22;
+            // 
+            // txtSearch
+            // 
+            this.txtSearch.Location = new System.Drawing.Point(1204, 33);
+            this.txtSearch.Name = "txtSearch";
+            this.txtSearch.Size = new System.Drawing.Size(100, 22);
+            this.txtSearch.TabIndex = 23;
+            // 
+            // btnDelete
+            // 
+            this.btnDelete.Location = new System.Drawing.Point(1204, 516);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Size = new System.Drawing.Size(75, 23);
+            this.btnDelete.TabIndex = 24;
+            this.btnDelete.Text = "Eliminar";
+            this.btnDelete.UseVisualStyleBackColor = true;
+            // 
+            // btnSave
+            // 
+            this.btnSave.Location = new System.Drawing.Point(1022, 505);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Size = new System.Drawing.Size(75, 23);
+            this.btnSave.TabIndex = 25;
+            this.btnSave.Text = "Guardar";
+            this.btnSave.UseVisualStyleBackColor = true;
+            // 
+            // btnSearch
+            // 
+            this.btnSearch.Location = new System.Drawing.Point(1310, 32);
+            this.btnSearch.Name = "btnSearch";
+            this.btnSearch.Size = new System.Drawing.Size(75, 23);
+            this.btnSearch.TabIndex = 26;
+            this.btnSearch.Text = "Buscar";
+            this.btnSearch.UseVisualStyleBackColor = true;
+            // 
+            // dgWare
+            // 
+            this.dgWare.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgWare.Location = new System.Drawing.Point(464, 308);
+            this.dgWare.Name = "dgWare";
+            this.dgWare.RowHeadersWidth = 51;
+            this.dgWare.RowTemplate.Height = 24;
+            this.dgWare.Size = new System.Drawing.Size(240, 150);
+            this.dgWare.TabIndex = 27;
             // 
             // Bodegas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1499, 679);
-            this.Controls.Add(this.label11);
+            this.Controls.Add(this.dgWare);
+            this.Controls.Add(this.btnSearch);
+            this.Controls.Add(this.btnSave);
+            this.Controls.Add(this.btnDelete);
+            this.Controls.Add(this.txtSearch);
+            this.Controls.Add(this.txtState);
+            this.Controls.Add(this.txtCity);
+            this.Controls.Add(this.txtCP);
+            this.Controls.Add(this.txtStreet);
+            this.Controls.Add(this.txtNameProduct);
+            this.Controls.Add(this.txtStock);
+            this.Controls.Add(this.txtPrice);
+            this.Controls.Add(this.txtResult);
+            this.Controls.Add(this.lbStock);
+            this.Controls.Add(this.lbPrice);
+            this.Controls.Add(this.lbResult);
+            this.Controls.Add(this.lbSearch);
             this.Controls.Add(this.label10);
-            this.Controls.Add(this.label9);
-            this.Controls.Add(this.label8);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
+            this.Controls.Add(this.lbNameProduct);
+            this.Controls.Add(this.lbStreet);
+            this.Controls.Add(this.lbCP);
+            this.Controls.Add(this.lbCity);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lbState);
+            this.Controls.Add(this.txtNameWare);
+            this.Controls.Add(this.lbNameWare);
             this.Name = "Bodegas";
             this.Text = "Bodegas";
+            ((System.ComponentModel.ISupportInitialize)(this.dgWare)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -173,17 +312,31 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lbNameWare;
+        private System.Windows.Forms.TextBox txtNameWare;
+        private System.Windows.Forms.Label lbState;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label lbCity;
+        private System.Windows.Forms.Label lbCP;
+        private System.Windows.Forms.Label lbStreet;
+        private System.Windows.Forms.Label lbNameProduct;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label lbSearch;
+        private System.Windows.Forms.Label lbResult;
+        private System.Windows.Forms.Label lbPrice;
+        private System.Windows.Forms.Label lbStock;
+        private System.Windows.Forms.TextBox txtResult;
+        private System.Windows.Forms.TextBox txtPrice;
+        private System.Windows.Forms.TextBox txtStock;
+        private System.Windows.Forms.TextBox txtNameProduct;
+        private System.Windows.Forms.TextBox txtStreet;
+        private System.Windows.Forms.TextBox txtCP;
+        private System.Windows.Forms.TextBox txtCity;
+        private System.Windows.Forms.TextBox txtState;
+        private System.Windows.Forms.TextBox txtSearch;
+        private System.Windows.Forms.Button btnDelete;
+        private System.Windows.Forms.Button btnSave;
+        private System.Windows.Forms.Button btnSearch;
+        private System.Windows.Forms.DataGridView dgWare;
     }
 }

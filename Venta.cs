@@ -153,5 +153,10 @@ namespace AlexiEconomy
 
             }
         }
+
+        private void lbResult_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
