@@ -198,7 +198,7 @@ namespace AlexiEconomy
         {
             Menu _menu = new Menu();
             _menu.Show();
-            this.Hide();
+            this.Close();
 
         }
 

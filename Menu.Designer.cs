@@ -35,7 +35,7 @@
             this.btnEmployes = new System.Windows.Forms.Button();
             this.btnWare = new System.Windows.Forms.Button();
             this.btnCustomers = new System.Windows.Forms.Button();
-            this.btnSuppliers = new System.Windows.Forms.Button();
+            this.btnProviders = new System.Windows.Forms.Button();
             this.btnInventory = new System.Windows.Forms.Button();
             this.btnSales = new System.Windows.Forms.Button();
             this.btnProducts = new System.Windows.Forms.Button();
@@ -135,20 +135,21 @@
             this.btnCustomers.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnCustomers.UseVisualStyleBackColor = false;
             // 
-            // btnSuppliers
+            // btnProviders
             // 
-            this.btnSuppliers.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(144)))), ((int)(((byte)(226)))));
-            this.btnSuppliers.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnSuppliers.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSuppliers.Image = global::AlexiEconomy.Properties.Resources.probedores_imag;
-            this.btnSuppliers.Location = new System.Drawing.Point(881, 228);
-            this.btnSuppliers.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnSuppliers.Name = "btnSuppliers";
-            this.btnSuppliers.Size = new System.Drawing.Size(183, 132);
-            this.btnSuppliers.TabIndex = 4;
-            this.btnSuppliers.Text = "Proveedores";
-            this.btnSuppliers.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnSuppliers.UseVisualStyleBackColor = false;
+            this.btnProviders.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(144)))), ((int)(((byte)(226)))));
+            this.btnProviders.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnProviders.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnProviders.Image = global::AlexiEconomy.Properties.Resources.probedores_imag;
+            this.btnProviders.Location = new System.Drawing.Point(881, 228);
+            this.btnProviders.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnProviders.Name = "btnProviders";
+            this.btnProviders.Size = new System.Drawing.Size(183, 132);
+            this.btnProviders.TabIndex = 4;
+            this.btnProviders.Text = "Proveedores";
+            this.btnProviders.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnProviders.UseVisualStyleBackColor = false;
+            this.btnProviders.Click += new System.EventHandler(this.btnSuppliers_Click);
             // 
             // btnInventory
             // 
@@ -211,7 +212,7 @@
             this.Controls.Add(this.btnEmployes);
             this.Controls.Add(this.btnWare);
             this.Controls.Add(this.btnCustomers);
-            this.Controls.Add(this.btnSuppliers);
+            this.Controls.Add(this.btnProviders);
             this.Controls.Add(this.btnInventory);
             this.Controls.Add(this.btnSales);
             this.Controls.Add(this.btnProducts);
@@ -235,7 +236,7 @@
         private System.Windows.Forms.Label lbMenu;
         private System.Windows.Forms.Button btnSales;
         private System.Windows.Forms.Button btnInventory;
-        private System.Windows.Forms.Button btnSuppliers;
+        private System.Windows.Forms.Button btnProviders;
         private System.Windows.Forms.Button btnCustomers;
         private System.Windows.Forms.Button btnWare;
         private System.Windows.Forms.Button btnEmployes;

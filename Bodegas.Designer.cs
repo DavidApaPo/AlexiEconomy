@@ -57,6 +57,7 @@
             this.btnViewProducts = new System.Windows.Forms.Button();
             this.dgWareProducts = new System.Windows.Forms.DataGridView();
             this.PaneWareProducts = new System.Windows.Forms.Panel();
+            this.Back = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgWare)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgWareProducts)).BeginInit();
             this.PaneWareProducts.SuspendLayout();
@@ -305,11 +306,22 @@
             this.PaneWareProducts.TabIndex = 30;
             this.PaneWareProducts.Visible = false;
             // 
+            // Back
+            // 
+            this.Back.Location = new System.Drawing.Point(12, 12);
+            this.Back.Name = "Back";
+            this.Back.Size = new System.Drawing.Size(48, 23);
+            this.Back.TabIndex = 31;
+            this.Back.Text = "Atra";
+            this.Back.UseVisualStyleBackColor = true;
+            this.Back.Click += new System.EventHandler(this.Back_Click);
+            // 
             // Bodegas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1499, 679);
+            this.Controls.Add(this.Back);
             this.Controls.Add(this.PaneWareProducts);
             this.Controls.Add(this.btnViewProducts);
             this.Controls.Add(this.dgWare);
@@ -381,5 +393,6 @@
         private System.Windows.Forms.Button btnViewProducts;
         private System.Windows.Forms.DataGridView dgWareProducts;
         private System.Windows.Forms.Panel PaneWareProducts;
+        private System.Windows.Forms.Button Back;
     }
 }

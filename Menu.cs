@@ -50,5 +50,12 @@ namespace AlexiEconomy
             _bodegas.Show();
             this.Hide();
         }
+
+        private void btnSuppliers_Click(object sender, EventArgs e)
+        {
+            Proveedores _proveedores = new Proveedores();
+            _proveedores.Show();
+            this.Hide();
+        }
     }
 }
